@@ -1,0 +1,55 @@
+/**
+  * Created by makanist on 6/12/2017.
+  */
+
+/**
+  *   the objective of this scala cod eis to find the existance of strings in an array
+  */
+
+object WordCount {
+  def main(args: Array[String]) {
+    //lets have an araay with several strings
+    val inputFile = Array("sai","sai","teja","sai","sai","teja","teja")
+    ///condition to check string "sai" which is existed so println statement will work
+    if(inputFile.contains("sai")){
+      println("sai" + "found in the array" + "   "+ inputFile.contains("sai"))
+    }
+
+    ///condition to check string "teja" which is existed so println statement will work
+    if(inputFile.contains("teja")){
+      println("Teja" + "Found in the array");
+    }
+
+    ///condition won't work if  string "makani"  is existed in array
+    if(!inputFile.contains("makani")){
+      println("Makani is not forund in array");
+    }
+
+     }
+}
+
+===============================================================================================================
+
+#/**
+  # Created by makanist on 6/12/2017.
+ # */
+
+#/**
+ # *   the objective of this python code is to find the count of each word
+ # input dataset is taken from the data repository given
+ #output will be printed on console as string --> number of times repeated in the input file.
+  #*/
+
+import sys
+file = open("G:\KDM\README.txt", "r+")#input file from data sets.
+wordcount = {}#output will be stored here
+for word in file.read().split():#splitting file into words . loop runs for each word once.
+    if word not in wordcount:
+        wordcount[word] = 1
+    else:
+        wordcount[word] += 1
+for key in wordcount.keys():#loop to print all the words and their count in the file.
+  print ("%s %s " % (key+"->", wordcount[key]))
+file.close();#closing the file after operations been performed successfully.
+=================================================================================================================
+
