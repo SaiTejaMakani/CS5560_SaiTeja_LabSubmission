@@ -1,5 +1,5 @@
 import sys
-file = open("G:\KDM\README.txt", "r+")
+file = open("E:\KDM\README.txt", "r+")
 wordcount = {}
 for word in file.read().split():
     if word not in wordcount:
