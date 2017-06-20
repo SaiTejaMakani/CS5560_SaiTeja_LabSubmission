@@ -1,0 +1,162 @@
+
+
+import java.io.{BufferedWriter, File, FileWriter}
+import org.apache.spark.{SparkConf, SparkContext}
+//**created by sai Teja 6/19/2017
+object SparkWordCount {
+
+  def main(args: Array[String]) {
+
+    System.setProperty("hadoop.home.dir","E:\\winutils");
+
+    val sparkConf = new SparkConf().setAppName("SparkWordCount").setMaster("local[*]")
+
+    val sc=new SparkContext(sparkConf)
+
+    val main_nlp: Main_NLP = new Main_NLP//creating java object
+    val lemmtext:String = main_nlp.Get_lemma()//using the get_lemma function to fetch lemmanatized words.
+
+    val file = new File("input.txt")//creating a text file
+    val bw = new BufferedWriter(new FileWriter(file))//creatign buffered writer
+    bw.write(lemmtext.toString)//writign the lemmanatized data into the file
+    bw.close()//closing file
+    val input= sc.textFile("input.txt")//using that file for scala programming
+
+    println(input)//testing
+    
+   val wc=input.flatMap(line=>{line.split(" ")}).map(word=>(word.charAt(0)+"=>",word+",")).cache().distinct()
+   val output=wc.reduceByKey(_+_)
+
+    output.saveAsTextFile("output")
+
+    val o=output.collect()
+
+    var s:String="Words:Count \n"
+    o.foreach{case(word,count)=>{
+
+     s+=word+" : "+count+"\n"
+
+    }}
+
+  }
+//def testing(word: String){println(word)testing
+//
+//}
+}
+
+=========================================================================================================================
+java code below
+=========================================================================================================================
+import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.util.CoreMap;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.Properties;
+/**
+ * Created by saiteja on 12-Jun-17.
+ */
+public class Main_NLP {
+    String text = null;//input text will be stored
+    String lemm_text = null; //lemnatized text will be loaded here later
+
+    Main_NLP() {
+       //creates stanford libraries
+        Properties props = new Properties();
+        props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+//text to be analyzed
+
+        //used sports data set
+        try {
+
+            String content = new String(Files.readAllBytes(Paths.get("E:\\KDM\\bbc\\sport\\010.txt")));
+            text = content;
+        } catch (IOException e) {
+            System.out.println("Exception occured while reading file");
+        }
+
+// create an empty Annotation just with the given text
+        Annotation document = new Annotation(text);
+
+// run all Annotators on this text
+        pipeline.annotate(document);
+
+        // these are all the sentences in this document
+// a CoreMap is essentially a Map that uses class objects as keys and has values with custom types
+        List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
+
+        for (CoreMap sentence : sentences) {
+            // traversing the words in the current sentence
+            // a CoreLabel is a CoreMap with additional token-specific methods
+            for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+                // this is the lemm tag of the token
+                String Lemm = token.get(CoreAnnotations.LemmaAnnotation.class);
+                lemm_text += Lemm+" ";
+
+            }
+        }
+        //System.out.println(lemm_text);//testing purpose
+    }
+    public String Get_lemma(){//this function return the lemmanatized words directlly to the scala program.
+        return lemm_text;
+    }
+}
+=============================================================================================================
+output:
+
+(o=>,over,one,on,olympic,of,)
+(w=>,will,when,want,win,well,world,)
+(a=>,a,aim,also,and,against,at,)
+(A=>,August,Athens,)
+(C=>,Commonwealth,Championships,Collins,)
+(I=>,I,Indoor,)
+(y=>,year,)
+(W=>,World,)
+('=>,'s,'',)
+(u=>,underestimate,)
+(m=>,metre,medal,most,medallist,my,)
+(c=>,compete,champion,competition,crowd,)
+(i=>,in,indoors,indoor,it,)
+(M=>,Maurice,Mark,)
+(U=>,Union,)
+(1=>,100m,18,)
+(O=>,Obikwelu,Olympic,)
+(e=>,exciting,evening,)
+(G=>,Greene,Grand,Gardener,)
+(K=>,Kitts,Kim,)
+(s=>,sixth,strong,such,shape,summer,say,supporter,start,sure,sprinter,silver,star,)
+(S=>,St,Sydney,)
+(g=>,great,get,good,gold,)
+
+output:
+(,=>,,,)
+(`=>,``,)
+(P=>,Prix,)
+(B=>,Birmingham,Britain,British,)
+(l=>,look,)
+(H=>,Helsinki,)
+(j=>,join,)
+(L=>,Lewis-Francis,)
+(f=>,form,final,for,front,forward,field,)
+(d=>,defend,)
+(F=>,Finland,Francis,February,)
+(p=>,plan,perform,part,)
+(h=>,home,holder,hope,he,)
+(6=>,60,60m,)
+(.=>,.,)
+(2=>,2003,)
+(n=>,nullamount,not,now,)
+(r=>,result,reception,run,really,relay,record,race,return,)
+(t=>,this,the,to,they,take,title,then,)
+(b=>,best,but,better,before,big,be,)
+(v=>,venue,)
+(N=>,Nevis,NIA,Norwich,)
+(J=>,Jason,)
+===================================================================================================================================
+
