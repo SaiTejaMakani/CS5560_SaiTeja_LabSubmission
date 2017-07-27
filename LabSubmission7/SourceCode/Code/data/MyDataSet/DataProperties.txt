@@ -1,0 +1,4 @@
+relatedTo,DATE
+relatedTo,DURATION
+relatedTo,PERSON
+relatedTo,LOCATION

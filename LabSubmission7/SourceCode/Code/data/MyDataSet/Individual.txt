@@ -1,0 +1,17 @@
+PERSON,Barack Obama
+PERSONDURATION,President Obama,President Obama 's years
+PERSON,Choom
+PERSON,Bill Clinton
+PERSON,President Obama
+PERSON,Maraniss
+DURATION,years
+LOCATION,Hawaii
+PERSON,Taliesin Catcher
+PERSON,Obama
+PERSON,Barry Obama
+PERSON,Patton
+PERSON,young Barry Obama
+PERSON,Maui Wowie
+DURATION,President Obama 's years
+PERSON,Barack H. Obama
+PERSONDURATION,Ray,years

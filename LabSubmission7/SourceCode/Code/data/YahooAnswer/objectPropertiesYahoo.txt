@@ -1,0 +1,92 @@
+has,President,Men,Func
+is Inhas,John Howard Yoder Topos Wendy Cope Joke Athol Fugard Surreal number Discordianism Noah Webster A Course,Miracles Alcoholics Anonymous Confidence trick,Func
+is in,Historical Review Deconstruction Answers,PERSON,Func
+is inhas,del,incompleteness theorem Holocaust theology Bill White Dilbert Fallacy of many questions,Func
+is inhas,PERSON,Children Free,Func
+has,President,Men,Func
+is Inhas,John Howard Yoder Topos Wendy Cope Joke Athol Fugard Surreal number Discordianism Noah Webster A Course,Miracles Alcoholics Anonymous Confidence trick,Func
+is Inhas,Pilgrim,ORGANIZATION,Func
+is Inhas,PERSON,theory,Func
+is in,Apocalypse Intelligent design movement,PERSON,Func
+is in,PERSON,Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story,Func
+is in,Potions,PERSON,Func
+is in,PERSON,Guide,Funcis in,PERSON,ORGANIZATION,Func
+is in,PERSON,PERSON,Func
+has read book upon,anyone,marigold,Func
+has readhas read book upon,anyone,book,Func
+has readhas read book upon,anyone,once marigold,Func
+has readhas read book uponqualities of,u,marigold,Func
+has,neil gaiman,anansi boys,Func
+is in,His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs,fiction,Func
+is in,Black comedy Fan fiction Anne Rice Academy Award,literature of Unfortunate Events,Func
+is inRealm of,Unfortunate Events,Elderlings/Characters,Func
+is inRealm ofof Series is,Unfortunate Events,Lord,Func
+is inRealm ofof Series is,MISC,PERSON,Func
+is in,His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs,fiction,Func
+is in,Black comedy Fan fiction Anne Rice Academy Award,literature of Unfortunate Events,Func
+is inRealm of,Unfortunate Events,Elderlings/Characters,Func
+is inRealm ofof Series is,Unfortunate Events,Lord,Func
+is inRealm ofof Series is,MISC,PERSON,Func
+is inRealm ofof Series is,Greyhawk Elf Big Read Orc Planets,science fiction Weapons of Middle-earth Dark Lord One Ring Warcraft Universe Lord of Rings movie trilogy,Func
+has,Daredevil Poker jargon Dad,Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct,Func
+has,Season Rocko,Modern Life Angel,Func
+has,President,Men,Func
+read,i,i,Func
+has read book upon,anyone,marigold,Func
+has,President,Men,Func
+is Inhas,John Howard Yoder Topos Wendy Cope Joke Athol Fugard Surreal number Discordianism Noah Webster A Course,Miracles Alcoholics Anonymous Confidence trick,Func
+is Inhas,Pilgrim,ORGANIZATION,Func
+is in,His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs,fiction,Func
+is in,Historical Review Deconstruction Answers,PERSON,Func
+is inhas,del,incompleteness theorem Holocaust theology Bill White Dilbert Fallacy of many questions,Func
+is in,His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs,fiction,Func
+is in,Black comedy Fan fiction Anne Rice Academy Award,literature of Unfortunate Events,Func
+is inRealm of,Unfortunate Events,Elderlings/Characters,Func
+is inRealm ofof Series is,Unfortunate Events,Lord,Func
+is in,His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs,fiction,Func
+is in,Black comedy Fan fiction Anne Rice Academy Award,literature of Unfortunate Events,Func
+has,Daredevil Poker jargon Dad,Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct,Func
+readhas,forgotten realms series lemoni,snicket series of unfortunate events,Func
+readhas,i,i like books,Func
+readneedhas,i,good book,Func
+readneedhas,i,book,Func
+read,i,i,Func
+readhas,forgotten realms series lemoni,snicket series of unfortunate events,Func
+readhas,i,i like books,Func
+has read book upon,anyone,marigold,Func
+has readhas read book upon,anyone,book,Func
+has readhas read book upon,anyone,once marigold,Func
+read,i,i,Func
+readhas,forgotten realms series lemoni,snicket series of unfortunate events,Func
+diary of,hoax i,anne frank,Func
+is in,way,last book,Func
+is in,Historical Review Deconstruction Answers,PERSON,Func
+is inhas,del,incompleteness theorem Holocaust theology Bill White Dilbert Fallacy of many questions,Func
+is inhas,PERSON,Children Free,Func
+is inhas,Grim Adventures,World War II Samuel Goldwyn Concentration camp Theresienstadt Megan Griffin Plame affair Mein Kampf Heterosexuality,Func
+is in,Apocalypse Intelligent design movement,PERSON,Func
+is in,PERSON,Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story,Func
+is in,Potions,PERSON,Func
+read,i,i,Func
+readhas,forgotten realms series lemoni,snicket series of unfortunate events,Func
+readhas,i,i like books,Func
+readneedhas,i,good book,Func
+is in,His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs,fiction,Func
+is in,Black comedy Fan fiction Anne Rice Academy Award,literature of Unfortunate Events,Func
+is inRealm of,Unfortunate Events,Elderlings/Characters,Func
+is in,Apocalypse Intelligent design movement,PERSON,Func
+is in,Apocalypse Intelligent design movement,PERSON,Func
+is in,PERSON,Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story,Func
+is in,Potions,PERSON,Funcis in,PERSON,Guide,Func
+has read book upon,anyone,marigold,Funchas readhas read book upon,anyone,book,Func
+is in,Historical Review Deconstruction Answers,PERSON,Func
+is in,way,last book,Funcis inhas,neville,character,Func
+is in,Apocalypse Intelligent design movement,PERSON,Func
+is in,PERSON,Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story,Func
+is in,Potions,PERSON,Funcis in,PERSON,Guide,Func
+is in,PERSON,ORGANIZATION,Func
+is in,Apocalypse Intelligent design movement,PERSON,Func
+is in,PERSON,Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story,Func
+is in,way,last book,Func
+is inhas,neville,character,Func
+is inis withhas,whole thing,wording of prophecy,Func

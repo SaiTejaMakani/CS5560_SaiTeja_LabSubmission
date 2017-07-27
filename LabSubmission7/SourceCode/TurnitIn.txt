@@ -1,0 +1,1315 @@
+name := "QASystem"
+
+version := "1.0"
+
+scalaVersion := "2.11.8"
+
+libraryDependencies ++= Seq(
+  "org.apache.spark" %% "spark-core" % "1.6.0" % "provided",
+  "org.apache.spark" %% "spark-mllib" % "1.6.0",
+  "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0",
+  "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0" classifier "models",
+  "edu.stanford.nlp" % "stanford-parser" % "3.6.0",
+  "com.google.protobuf" % "protobuf-java" % "2.6.1",
+  "org.apache.httpcomponents" % "httpcore" % "4.4.5",
+  "org.apache.httpcomponents" % "httpclient" % "4.5.2",
+  "com.googlecode.json-simple" % "json-simple" % "1.1.1",
+  "com.github.scopt" % "scopt_2.10" % "3.4.0",
+  "net.sourceforge.owlapi" % "owlapi-distribution" % "5.1.0"
+)
+
+
+/**
+ * Created by shalin on 6/16/2017.
+ */
+public class NLPOperations {
+
+    public StanfordCoreNLP GetNLPObject() {
+        // creates a StanfordCoreNLP object, with POS tagging, lemmatization, NER, parsing, and coreference resolution
+        Properties prop = new Properties();
+        prop.setProperty("annotators", "tokenize,ssplit,pos,lemma,ner,parse");
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(prop);
+        return pipeline;
+    }
+
+    public static String returnLemma(String sentence) {
+        Document doc = new Document(sentence);
+        String lemma="";
+        for (Sentence sent : doc.sentences()) {  // Will iterate over two sentences
+
+            List<String> l=sent.lemmas();
+            for (int i = 0; i < l.size() ; i++) {
+                lemma+= l.get(i) +" ";
+            }
+            //   System.out.println(lemma);
+        }
+        return lemma;
+    }
+
+    public Annotation AnnotateData(String data,StanfordCoreNLP pipe){
+        Annotation annotatedDatadata = new Annotation(data);
+        pipe.annotate(annotatedDatadata);
+        return  annotatedDatadata;
+    }
+
+    public List<CoreMap> GetSentencesFromAnnotatedData(Annotation annotatedDatadata){
+        List<CoreMap> SentencesFromAnnotatedData = annotatedDatadata.get(CoreAnnotations.SentencesAnnotation.class);
+        return SentencesFromAnnotatedData;
+    }
+
+    public List<String> GetLemmas(CoreMap sentence,String sentenceNumber) {
+        List<String> lemmaList= new ArrayList<>();
+        for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+            String tokenNumber=token.toString().split("-")[1];
+            String tokenString=token.toString().split("-")[0];
+            lemmaList.add("("+sentenceNumber+","+tokenNumber+","+tokenString+","+token.get(CoreAnnotations.LemmaAnnotation.class)+")");
+        }
+        return lemmaList;
+    };
+
+    public List<String> GetLemmas(CoreMap sentence) {
+        List<String> lemmaList= new ArrayList<>();
+        for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+            lemmaList.add(token.get(CoreAnnotations.LemmaAnnotation.class));
+        }
+        return lemmaList;
+    };
+
+    public List<String> GetToken(CoreMap sentence){
+        List<String> tokenList=new ArrayList<>();
+        for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+            tokenList.add(token.toString());
+        }
+        return tokenList;
+    }
+
+    public String GetTopic(List<String> queLst){
+        String topic="";
+        String ldaFilePath="data/LDAOutput.txt";
+        try {
+            String ldaOutput= ReadWriteOperation.ReadFile(ldaFilePath, java.nio.charset.StandardCharsets.UTF_8);
+            for (String que : queLst) {
+                if(ldaOutput.contains(que)){
+                    topic=que;
+                    break;
+                }
+            }
+        }
+        catch (IOException ioExe)
+        {
+            topic="";
+        }
+        finally {
+            return topic;
+        }
+    }
+
+    public List<String> GetPOS(CoreMap sentence,String sentenceNumber) {
+        List<String> POSList= new ArrayList<>();
+        for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+            String tokenNumber=token.toString().split("-")[1];
+            String tokenString=token.toString().split("-")[0];
+            POSList.add("("+sentenceNumber+","+tokenNumber+","+tokenString+","+token.get(CoreAnnotations.PartOfSpeechAnnotation.class)+")");
+        }
+        return POSList;
+    }
+
+    public Set<String> GetTextAnnotation(List<CoreMap> sentences) {
+        Set<String> textList = new HashSet<>();
+        for (CoreMap sentence : sentences) {
+            for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+                textList.add(token.get(CoreAnnotations.TextAnnotation.class));
+            }
+        }
+        return textList;
+    }
+
+
+    public List<String> GetNER(CoreMap sentence,String sentenceNumber) {
+        List<String> NERList = new ArrayList<>();
+        for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+            String tokenNumber=token.toString().split("-")[1];
+            String tokenString=token.toString().split("-")[0];
+            NERList.add("("+sentenceNumber+","+tokenNumber+","+tokenString+","+token.get(CoreAnnotations.NamedEntityTagAnnotation.class)+")");
+        }
+
+        return NERList;
+    }
+
+    public String GetNER(String sentence) {
+        NLPOperations nlpOper = new NLPOperations();
+        StanfordCoreNLP nlpObj = nlpOper.GetNLPObject();
+        Annotation annotatedInputData = AnnotateData(sentence, nlpObj);
+        CoreMap annotedSen=GetSentencesFromAnnotatedData(annotatedInputData).get(0);
+        String NER="";
+        for (CoreLabel token : annotedSen.get(CoreAnnotations.TokensAnnotation.class)) {
+            NER= token.get(CoreAnnotations.NamedEntityTagAnnotation.class);
+        }
+        return NER;
+    }
+
+    public Map<String,String> GetNERR(CoreMap sentence) {
+        Map<String,String> NERList = new HashMap<>();
+        for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+            String tokenNumber=token.toString().split("-")[1];
+            String tokenString=token.toString().split("-")[0];
+            NERList.put(tokenString,token.get(CoreAnnotations.NamedEntityTagAnnotation.class));
+        }
+
+        return NERList;
+    }
+
+    public Map<String,List<String>> GetNER(CoreMap sentence) {
+        Map<String,List<String>> NERList = new HashMap<>();
+        List<String> tokenList=new ArrayList<>();
+        for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+            String tokenNumber=token.toString().split("-")[1];
+            String tokenString=token.toString().split("-")[0];
+            tokenList.add(tokenString);
+            tokenList.add(token.get(CoreAnnotations.NamedEntityTagAnnotation.class));
+            NERList.put(tokenNumber,tokenList);
+        }
+
+        return NERList;
+    }
+    public Set<Tree> GetTree(List<CoreMap> sentences) {
+        Set<Tree> treeList = new HashSet<>();
+        for (CoreMap sentence : sentences) {
+            for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+                treeList.add(sentence.get(TreeCoreAnnotations.TreeAnnotation.class));
+            }
+        }
+        return treeList;
+    }
+
+
+
+    public Set<SemanticGraph> GetSemanticGraph(List<CoreMap> sentences) {
+        Set<SemanticGraph> semanticGraphList = new HashSet<>();
+        for (CoreMap sentence : sentences) {
+            for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+                semanticGraphList.add(sentence.get(SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation.class));
+            }
+        }
+        return semanticGraphList;
+    }
+
+}
+
+import scala.collection.mutable.ListBuffer
+
+/**
+  * Created by shalin on 6/27/2017.
+  */
+object NGramOperations {
+  def getNGramsFromSentance(sen: String, n:Int): List[String] = {
+    val words = sen
+    val ngram = words.split(' ').sliding(n)
+
+    val ngList=new ListBuffer[String]()
+     ngram.foreach(ng=> {
+          ngList += ng.toString
+        })
+
+    return  ngList.toList
+  }
+}
+
+import java.io.{File, IOException}
+import java.nio.charset.StandardCharsets
+import java.util.List
+
+import util.control.Breaks._
+import java.util
+
+import scala.collection._
+import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.mllib.feature.{HashingTF, IDF, Word2Vec, Word2VecModel}
+
+import scala.collection.immutable.HashMap
+import com.sun.xml.internal.bind.api.impl.NameConverter.Standard
+
+import scala.collection.JavaConversions._
+import scala.collection.mutable.ListBuffer
+import scala.io.{Source, StdIn}
+
+/**
+  * Created by shalin on 7/2/2017.
+  */
+object Main {
+
+  def main(args: Array[String]): Unit = {
+    val configurationSpark = new SparkConf()
+      .setMaster("local[*]")
+      .setAppName("QuestionAnsweringSystem")
+    System.setProperty("hadoop.home.dir", "C:\\winutils")
+
+
+    // val processedData = "E:\\Knowledge Discovery Management\\Tutorials\\ScalaTutorial1\\output\\processedData.txt"
+    val sContext = new SparkContext(configurationSpark)
+
+    val yahooFileData = sContext.textFile("data\\yahoodata.txt").collect()
+    val fileData = sContext.textFile("data\\AlltheSentences.txt").collect()
+
+    val openIEOper = new OpenIEOper()
+
+    val stopwords = sContext.textFile("data/stopwords.txt").collect()
+
+    //XmlParser.readTextFromYahooData(sContext)
+    //ReadWriteOperation.RemoveEmptyLines();
+
+    sContext.parallelize(fileData).collect().foreach(line => {
+      if (!line.isEmpty) {
+        openIEOper.GenerateFinalTriplets(line)
+      }
+    })
+
+    sContext.parallelize(yahooFileData).collect().foreach(line => {
+      if (!line.isEmpty) {
+        openIEOper.GenerateFinalTriplets(line)
+      }
+    })
+
+
+    //Remove duplicate lines from text file
+    OpenIEOper.RemoveDuplicatesFromFile("E:\\Knowledge Discovery Management\\QASystem\\data\\propertiesYahoo.txt");
+    OpenIEOper.RemoveDuplicatesFromFile("E:\\Knowledge Discovery Management\\QASystem\\data\\individualYahoo.txt");
+    OpenIEOper.RemoveDuplicatesFromFile("E:\\Knowledge Discovery Management\\QASystem\\data\\ClassYahoo.txt");
+    OpenIEOper.RemoveDuplicatesFromFile("E:\\Knowledge Discovery Management\\QASystem\\data\\objectPropertiesYahoo.txt");
+    OpenIEOper.RemoveDuplicatesFromFile("E:\\Knowledge Discovery Management\\QASystem\\data\\TripletFileYahoo.txt");
+
+
+
+    Ontology.GenerateOntology("data/MyDataSet","ObamaOnto")
+    Ontology.GenerateOntology("data/YahooAnswer","ObamaOnto")
+
+  }
+}
+
+import java.io.FileOutputStream
+import com.clarkparsia.owlapi.explanation.util.OntologyUtils
+import org.semanticweb.owlapi.apibinding.OWLManager
+import org.semanticweb.owlapi.formats.OWLXMLDocumentFormat
+import org.semanticweb.owlapi.model._
+import org.semanticweb.owlapi.util.DefaultPrefixManager
+import scala.io.Source
+
+
+  object Ontology {
+    def GenerateOntology(path: String,ontName: String ): Unit = {
+
+      val OntURI = "http://www.semanticweb.org/shalin/ontologies/2017/6/"
+
+      val owlManager = OWLManager.createOWLOntologyManager
+      //creating owlManager manager
+      val dataFactory = owlManager.getOWLDataFactory //In order to create objects that represent entities
+
+      val obamaOnto = owlManager.createOntology(IRI.create(OntURI, ontName+"#"))
+      //Prefix for all the entities
+      val prefixManager = new DefaultPrefixManager(null, null, OntURI + ontName+"#")
+
+
+      // Declaration Axiom for creating Classes
+      val classes = Source.fromFile(path+"/Classes").getLines()
+
+      classes.foreach(f => {
+        val ontClass = dataFactory.getOWLClass(f, prefixManager)
+        val declarationAxiomclass = dataFactory.getOWLDeclarationAxiom(ontClass)
+        owlManager.addAxiom(obamaOnto, declarationAxiomclass)
+      })
+
+      // Creating SubClassOfAxiom
+      val subClasses = Source.fromFile(path+"/SubClasses").getLines()
+
+      subClasses.foreach(line => {
+        val str = line.split(",")
+        val ontClass = dataFactory.getOWLClass(str(0), prefixManager)
+        val subCls = dataFactory.getOWLClass(str(1), prefixManager)
+        val declarationAxiom = dataFactory.getOWLSubClassOfAxiom(subCls, ontClass)
+        owlManager.addAxiom(obamaOnto, declarationAxiom)
+      })
+
+
+      //Creating Object Properties for obama ontology
+      val objprop = Source.fromFile(path+"/ObjectProperties").getLines()
+      objprop.foreach(f => {
+        val str = f.split(",")
+        val obamaDomain = dataFactory.getOWLClass(str(1), prefixManager)
+        val dataRange = dataFactory.getOWLClass(str(2), prefixManager)
+        //Creating Object property ‘hasGender’
+        val objpropaxiom = dataFactory.getOWLObjectProperty(str(0), prefixManager)
+
+        val dataRangeAxiom = dataFactory.getOWLObjectPropertyRangeAxiom(objpropaxiom, dataRange)
+        val domainAxiom = dataFactory.getOWLObjectPropertyDomainAxiom(objpropaxiom, obamaDomain)
+
+        //Adding Axioms for obama ontology
+        owlManager.addAxiom(obamaOnto, dataRangeAxiom)
+        owlManager.addAxiom(obamaOnto, domainAxiom)
+      })
+
+
+      val dataprop = Source.fromFile(path+"/DataProperties").getLines()
+
+      dataprop.foreach(f => {
+        val str = f.split(",")
+        val obamaDomain = dataFactory.getOWLClass(str(1), prefixManager)
+
+        // Data Properties creation
+
+        val fullName = dataFactory.getOWLDataProperty(str(0), prefixManager)
+        val domainAxiomfullName = dataFactory.getOWLDataPropertyDomainAxiom(fullName, obamaDomain)
+        owlManager.addAxiom(obamaOnto, domainAxiomfullName)
+        //Defining String Datatype
+        if (str(2) == "string") {
+          val stringDatatype = dataFactory.getStringOWLDatatype()
+          val rangeAxiomfullName = dataFactory.getOWLDataPropertyRangeAxiom(fullName, stringDatatype)
+          //Adding this Axiom to Ontology
+          owlManager.addAxiom(obamaOnto, rangeAxiomfullName)
+        }
+        else if (str(2) == "int") {
+          //Defining Integer Datatype
+          val Datatype = dataFactory.getIntegerOWLDatatype()
+          val rangeAxiomfullName = dataFactory.getOWLDataPropertyRangeAxiom(fullName, Datatype)
+          //Adding this Axiom to Ontology
+          owlManager.addAxiom(obamaOnto, rangeAxiomfullName)
+        }
+      })
+
+
+      //Creating NamedIndividuals using ClassAssertionAxiom
+      val individuals = Source.fromFile(path+"/Individuals").getLines()
+
+      individuals.foreach(line => {
+        val str = line.split(",")
+        val cls = dataFactory.getOWLClass(str(0), prefixManager)
+        val ind = dataFactory.getOWLNamedIndividual(str(1), prefixManager)
+        val classAssertion = dataFactory.getOWLClassAssertionAxiom(cls, ind)
+        owlManager.addAxiom(obamaOnto, classAssertion)
+      })
+
+      val triplets = Source.fromFile(path+"/Triplets").getLines()
+      triplets.foreach(f => {
+        val str = f.split(",")
+        val sub = dataFactory.getOWLNamedIndividual(str(0), prefixManager)
+
+
+        if (str(3) == "Data") {
+          val pred = dataFactory.getOWLDataProperty(str(1), prefixManager)
+          val dat = dataFactory.getOWLLiteral(str(2))
+          val datAsser = dataFactory.getOWLDataPropertyAssertionAxiom(pred, sub, dat)
+          owlManager.addAxiom(obamaOnto, datAsser)
+        }
+        if (str(3) == "Obj") {
+          val pred = dataFactory.getOWLObjectProperty(str(1), prefixManager)
+          val obj = dataFactory.getOWLNamedIndividual(str(2), prefixManager)
+          val objAsser = dataFactory.getOWLObjectPropertyAssertionAxiom(pred, sub, obj)
+          owlManager.addAxiom(obamaOnto, objAsser)
+        }
+      })
+
+      val os = new FileOutputStream(path+ontName+".owl")
+      val owlxmlFormat = new OWLXMLDocumentFormat
+      owlManager.saveOntology(obamaOnto, owlxmlFormat, os)
+      System.out.println(ontName+" Created")
+
+    }
+  }
+
+
+
+import rita.RiWordNet
+
+/**
+  * Created by shalin on 7/2/2017.
+  */
+object WordNet {
+    def GetSynoymnsUsingWordNet(wordToFind:String): Array[String] ={
+    val wordnet = new RiWordNet("E:\\Knowledge Discovery Management\\WordNet-3.0\\WordNet-3.0")
+    println(wordToFind)
+    val pos=wordnet.getPos(wordToFind)
+    println(pos.mkString(" "))
+    val syn=wordnet.getAllSynonyms(wordToFind, pos(0), 10)
+    return syn
+  }
+}
+
+
+import org.apache.spark.SparkContext
+import scala.collection.JavaConversions._
+
+object XMLParser {
+  var isTxt=false
+  def getText(sparkContext: SparkContext): Unit =   {
+    val allFile = ReadWriteOperation.GetListOfFileFromFolder("E:\\Knowledge Discovery Management\\QASystem\\data\\Dataset")
+    allFile.foreach(filename=> {
+      sparkContext.textFile(filename).collect().foreach(a => {
+        if (isTxt) {
+          ReadWriteOperation.WriteToFile(a, "data/yahoodata.txt")
+        }
+        if (a.equals("<TEXT>")) {
+          isTxt = true
+        }
+        if (a.equals("</TEXT>")) {
+          isTxt = false
+        }
+      })
+    })
+  }
+}
+
+import java.io.File
+
+import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.mllib.feature.{HashingTF, IDF, Word2Vec, Word2VecModel}
+import org.apache.spark.rdd.RDD
+
+import scala.collection.immutable.HashMap
+
+/**
+  * Created by shalin on 6/26/2017.
+  */
+
+object TF_IDF {
+
+  def GetTFIDF(filePath: String, sparkContectObj: SparkContext): RDD[Seq[String]] = {
+
+    //Reading the processed Text File to find synonyms
+    val processedFile = sparkContectObj.textFile(filePath)
+
+    var wordSeq = processedFile.map(line => {
+      val wordStrings = line.split(" ")
+      val newWordStr=wordStrings++ NGramOperations.getNGramsFromSentance(line,2) ++  NGramOperations.getNGramsFromSentance(line,3)
+      newWordStr.toSeq
+    })
+
+
+    //HashingTF object creation
+    val hashingTF = new HashingTF()
+
+    //Creating Term Frequency of the document
+    val tf = hashingTF.transform(wordSeq)
+    tf.cache() // cache object for fats processing
+
+    val idf = new IDF().fit(tf) //IDF for calculated TF
+
+
+    val tf_idfValue = idf.transform(tf) //Creating IDF for TF
+
+    val tfidfvalues = tf_idfValue.flatMap(value => {
+      val newValue: Array[String] = value.toString.replace(",[", ";").split(";")
+      val values = newValue(2).replace("]", "").replace(")", "").split(",")
+      values
+    })
+
+    val tfidfindex = tf_idfValue.flatMap(value => {
+      val newValue: Array[String] = value.toString.replace(",[", ";").split(";")
+      val indices = newValue(1).replace("]", "").replace(")", "").split(",")
+      indices
+    })
+
+    val tfidfData = tfidfindex.zip(tfidfvalues)
+
+    var hmObj = new HashMap[String, Double]
+
+    tfidfData.collect().foreach(f => {
+      hmObj += f._1 -> f._2.toDouble
+    })
+
+    val mapp = sparkContectObj.broadcast(hmObj)
+
+    val wordData = wordSeq.flatMap(_.toList)
+    val rddOfWords = wordData.map(wrd => {
+      Seq(wrd)
+    })
+    return rddOfWords
+  }
+
+  def TrainModel(sparkContectObj: SparkContext, rddOfWords: RDD[Seq[String]]): Unit = {
+    //W2Vector
+    val modelPath = "data/W2V"
+    val modelFolder = new File(modelPath)
+    val word2vec = new Word2Vec().setVectorSize(5000)
+    val model = word2vec.fit(rddOfWords)
+    /*for ((synonym, cosineSimilarity) <- synonyms) {
+      println("synonym :" + s"$synonym $cosineSimilarity")
+    }
+    */
+    model.save(sparkContectObj, modelPath)
+  }
+
+
+  def FindSynonyms(word: String,sparkContectObj: SparkContext):Array[(String,Double)]= {
+    val modelPath = "data/W2V"
+    val modelFolder = new File(modelPath)
+    val wordToFind = word
+    val sameModel = Word2VecModel.load(sparkContectObj, modelPath)
+    val synonyms = sameModel.findSynonyms(wordToFind, 50)
+    println(synonyms(0), synonyms(1).toString())
+    return synonyms
+  }
+}
+
+import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.function.Consumer;
+import java.util.stream.Stream;
+
+/**
+ * Created by shalin on 6/16/2017.
+ */
+public class ReadWriteOperation {
+    static String ReadFile(String path, Charset encoding) throws IOException
+    {
+        byte[] encoded = Files.readAllBytes(Paths.get(path));
+        return new String(encoded, encoding);
+    }
+
+    static void WriteToFile(String lst, String path)
+    {
+        try{
+            File file = new File(path);
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            FileWriter writer= new FileWriter(path,true);
+                writer.write(lst+"\n");
+            writer.close();
+        } catch (IOException e) {
+
+        }
+    }
+
+    static void AppendToFile(String filename,String text){
+        try {
+            Files.write(Paths.get(filename),text.getBytes(), StandardOpenOption.APPEND);
+        }catch (IOException e) {
+            //exception handling left as an exercise for the reader
+        }
+    }
+        static List<String> GetListOfFileFromFolder(String directoryPath){
+            List<String> allFiles=new ArrayList<>();
+            try (Stream<Path> paths = Files.walk(Paths.get(directoryPath))) {
+                paths
+                           .forEach(new Consumer<Path>() {
+                            @Override
+                            public void accept(Path file) {
+                                allFiles.add(file.toString());
+                            }
+                        });
+            }catch (IOException io){
+                System.out.println(io);
+            }
+            return allFiles;
+        }
+
+
+        static void RemoveEmptyLines() {
+            try {
+                FileReader fr = new FileReader("data/WholeDataSet.txt");
+                BufferedReader br = new BufferedReader(fr);
+                FileWriter fw = new FileWriter("data/AlltheSentences.txt");
+                String line;
+
+                while ((line = br.readLine()) != null) {
+                    line = line.trim(); // remove leading and trailing whitespace
+                    if (!line.equals("")) // don't write out blank lines
+                    {
+                        fw.write(line, 0, line.length());
+                    }
+                }
+                fr.close();
+                fw.close();
+            }catch (IOException io)
+            {
+
+            }
+        }
+
+
+   static void ReadAllFileFromFolder(String inputDirectoryPath,String outputPath) {
+
+       List<String> allFile = GetListOfFileFromFolder(inputDirectoryPath);
+       for (String fileName : allFile) {
+           try {
+               WriteToFile(ReadFile(fileName, StandardCharsets.UTF_8), outputPath);
+           } catch (IOException io) {
+
+           }
+       }
+   }
+
+    static void CreateandWriteToCSV(List<NLPData> nlpdata, String fileName){
+
+          String COMMA = ",";
+          String NEW_LINE = "\n";
+
+          String headers="Token,Lamma,POS,NER";
+
+          FileWriter fWriter=null ;
+        try {
+
+            fWriter = new FileWriter(fileName);
+            fWriter.append(headers);
+
+            fWriter.append(NEW_LINE);
+
+            for (NLPData nlp : nlpdata) {
+                fWriter.append(nlp.token);
+
+                fWriter.append(COMMA);
+
+                fWriter.append(nlp.lemma);
+
+                fWriter.append(COMMA);
+
+                fWriter.append(nlp.POS);
+
+                fWriter.append(COMMA);
+
+                fWriter.append(nlp.NER);
+
+                fWriter.append(COMMA);
+
+                fWriter.append(NEW_LINE);
+
+            }
+
+            System.out.println("CSV file was created successfully !!!");
+
+        } catch (Exception e) {
+
+            System.out.println("Error in CsvFileWriter !!!");
+
+            e.printStackTrace();
+
+        } finally {
+
+            try {
+
+                fWriter.flush();
+
+                fWriter.close();
+
+            } catch (IOException e) {
+
+                System.out.println("Error while flushing/closing fileWriter !!!");
+
+                e.printStackTrace();
+
+            }
+
+        }
+
+
+
+    }
+
+    public static void WriteListToFile(List<String> strLst, String fileNAme) {
+        try {
+            File file = new File(fileNAme);
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            FileWriter writer = new FileWriter(fileNAme, true);
+            for (String str : strLst) {
+                writer.write(str + "\n");
+            }
+
+        } catch (IOException e) {
+        }
+    }
+
+}
+
+import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.util.CoreMap;
+import sun.misc.CharacterEncoder;
+
+import java.io.File;
+import java.io.IOException;
+import java.lang.reflect.Array;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
+
+/**
+ * Created by shalin on 6/16/2017.
+ */
+public class QuestionAns {
+
+    static  String placeData="E:\\Knowledge Discovery Management\\Tutorials\\Tutorial2\\output\\placeData.txt";
+    static  String nameData="E:\\Knowledge Discovery Management\\Tutorials\\Tutorial2\\output\\nameData.txt";
+    static  String sentenceFile="data\\SentencesFile.txt";
+    static  String nounData="E:\\Knowledge Discovery Management\\Tutorials\\Tutorial2\\output\\nounData.txt";
+
+    final static NLPOperations nlpOp=new NLPOperations();
+    final static StanfordCoreNLP nlpobj= nlpOp.GetNLPObject();
+
+    static String GetFinalAns(String questionType, String ans, String formattedQuestion){
+        String formattedAnswer="Sorry I don't have Answer";
+        ans=ans.toLowerCase();
+        switch(questionType) {
+            case "who":{
+                ans=ans.toUpperCase();
+                formattedAnswer=ans+formattedQuestion;
+            }
+            break;
+            case "which":formattedAnswer=formattedQuestion+" "+ans;
+                break;
+            case "what":formattedAnswer=formattedQuestion+" "+ans;
+                break;
+            case "when":formattedAnswer=formattedQuestion+" "+ans;
+                break;
+            case "where":formattedAnswer=formattedQuestion+" "+ans;
+                break;
+            default:formattedAnswer=ans;
+                break;
+        }
+        formattedAnswer=formattedAnswer.replace(formattedAnswer.charAt(1), Character.toUpperCase(formattedAnswer.charAt(1)));
+        return  formattedAnswer;
+    }
+
+  /*  static List<String> LemmatiseTheQuestion(String question){
+        List<String> lemmatizedQuestion;
+        StanfordCoreNLP nlpObj= nlpOp.GetNLPObject();
+        Annotation annotedData= nlpOp.AnnotateData(question,nlpObj);
+        List<CoreMap> annotedQuestion= nlpOp.GetSentencesFromAnnotatedData(annotedData);
+        lemmatizedQuestion=nlpOp.GetLemmas(annotedQuestion);
+        return lemmatizedQuestion;
+    }*/
+
+    static String FindOutAnswer( List<String> lemmatizedQuestion,String questionType) {
+        String ans="";
+        switch(questionType) {
+            case "who":ans=GetName(lemmatizedQuestion);
+                break;
+            case "where":ans=GetPlace(lemmatizedQuestion);
+                break;
+            case "what":ans=GetNoun(lemmatizedQuestion);
+                break;
+            case "when":ans=GetTime(lemmatizedQuestion);
+                break;
+            default:ans=MatchSentance(lemmatizedQuestion);;
+                break;
+        }
+        return ans;
+    }
+
+    private static String GetTime(List<String> lemmatizedQuestion) {
+        String time="";
+        try {
+            Scanner lineScanner = new Scanner(new File(sentenceFile));
+            while (lineScanner.hasNextLine()){
+                String line=lineScanner.nextLine();
+                Scanner wordScanner=new Scanner(line);
+                while(wordScanner.hasNext()) {
+                    String word = wordScanner.next();
+                    for (String lemma : lemmatizedQuestion)
+                        if (lemma.contains(word)) {
+                            time = SearchDate(line);
+                            if(time!="")
+                            break;
+                        }
+                    if(time!="")
+                        break;
+                }
+            }
+        }catch (IOException io) {
+            time="";
+        }finally {
+            return time;
+        }
+    }
+
+    private static String SearchDate(String line) {
+        String date="";
+       /* Annotation annotatedInputData = nlpOp.AnnotateData(line, nlpobj);
+        List<CoreMap> annotatedSentace= nlpOp.GetSentencesFromAnnotatedData(annotatedInputData);
+        for (CoreMap sentance:annotatedSentace) {
+            Map<String, List<String>> NEData = nlpOp.GetNER(sentance);
+            SortedSet<String> keyset = new TreeSet<String>(NEData.keySet());
+            String mapKey=keyset.first();
+            List<String> mapValue= NEData.get(mapKey);
+            for (int i=0;i<=mapValue.size();i++) {
+                if(mapValue.get(i).contains("DATE")){
+                    date =date+mapValue.get(i-1).toString()+" ";
+                    if (!mapValue.get(i+2).contains("DATE"))
+                        break;
+                }
+            }
+        }*/
+        return date;
+    }
+    private static String GetNoun(List<String> lemmatizedQuestion) {
+        String noun="";
+        for (String word:nounData.split(" ")) {
+            for (String lemma : lemmatizedQuestion)
+                if (lemma.equals(word)) {
+                   String tokenNumber= GetTokenNumber(word);
+                    noun=SearchNoun(tokenNumber);
+                    break;
+                }
+        }
+        return noun;
+    }
+
+    private static String SearchNoun(String tokenNumber) {
+        String noun="";
+        for (String word:nounData.split(" ")) {
+            if (word.contains(tokenNumber))
+            {
+                noun= word.split("-")[0];
+            }
+        }
+        return noun;
+    }
+
+    private static String GetTokenNumber(String word) {
+        return word.split("-")[1];
+    }
+
+    private static String MatchSentance(List<String> lemmatizedQuestion) {
+        String isMatched="No";
+        for (String word:nounData.split(" ")) {
+            for (String lemma : lemmatizedQuestion)
+                if (lemma.equals(word)) {
+                    return  "Yes";
+                }
+        }
+        return isMatched;
+    }
+
+    private static String GetPlace(List<String> lemmatizedQuestion) {
+        String place="";
+        try {
+            Scanner lineScanner = new Scanner(new File(sentenceFile));
+            while (lineScanner.hasNextLine()){
+                String line=lineScanner.nextLine();
+                Scanner wordScanner=new Scanner(line);
+                while(wordScanner.hasNext()) {
+                    String word = wordScanner.next();
+                    for (String lemma : lemmatizedQuestion)
+                        if (lemma.contains(word)) {
+                            place = SearchPlace(line);
+                            if(place!="")
+                                break;
+                        }
+                    if(place!="")
+                        break;
+                }
+            }
+        }catch (IOException io) {
+            place="";
+        }finally {
+            return place;
+        }
+    }
+
+    private static String SearchPlace(String line) {
+        String place="";
+       /* Annotation annotatedInputData = nlpOp.AnnotateData(line, nlpobj);
+        List<CoreMap> annotatedSentace= nlpOp.GetSentencesFromAnnotatedData(annotatedInputData);
+        for (CoreMap sentance:annotatedSentace) {
+            Map<String, List<String>> NEData = nlpOp.GetNER(sentance);
+            SortedSet<String> keyset = new TreeSet<String>(NEData.keySet());
+            String mapKey=keyset.first();
+                List<String> mapValue= NEData.get(mapKey);
+                for (String val:mapValue) {
+                    if(val.contains("LOCATION")){
+                        place =place+mapValue.get( mapValue.indexOf(val)-1).toString()+" ";
+                        if (place!="")
+                        break;
+                    }
+                }
+        }*/
+        return place;
+    }
+
+    private static String GetName(List<String> lemmatizedQuestion) {
+        String name="";
+        try {
+            Scanner lineScanner = new Scanner(new File(sentenceFile));
+            while (lineScanner.hasNextLine()){
+                String line=lineScanner.nextLine();
+                Scanner wordScanner=new Scanner(line);
+                while(wordScanner.hasNext()) {
+                    String word = wordScanner.next();
+                        for (String lemma : lemmatizedQuestion)
+                            if (lemma.contains(word)) {
+                                name = SearchName(line);
+                                break;
+                            }
+                }
+            }
+        }catch (IOException io) {
+        name="";
+        }finally {
+            return name;
+        }
+    }
+
+    private static String SearchName(String line) {
+        String name="";
+       /* Annotation annotatedInputData = nlpOp.AnnotateData(line, nlpobj);
+        List<CoreMap> annotatedSentace= nlpOp.GetSentencesFromAnnotatedData(annotatedInputData);
+        for (CoreMap sentance:annotatedSentace) {
+            Map<String, List<String>> NEData = nlpOp.GetNER(sentance);
+            SortedSet<String> keyset = new TreeSet<String>(NEData.keySet());
+            String mapKey=keyset.first();
+            List<String> mapValue= NEData.get(mapKey);
+            for (String val:mapValue) {
+                if(val.contains("PERSON")){
+                    name =name+mapValue.get( mapValue.indexOf(val)-1).toString()+" ";
+                    if (name!="")
+                        break;
+                }
+            }
+        }*/
+        return name;
+    }
+
+    static Boolean GotTheAnswer(String answer){
+          if (answer.equals("I don't have answer")){
+                return  false;
+          }
+          else
+              return  true;
+        }
+
+    static List<String> FormatQuestion(String question){
+        question=question.toLowerCase();
+        question= removePunctuationAndClean(question);
+        String formattedQuestion="";
+        String questionType="";
+        List<String> questionLst=new ArrayList<>();
+
+        String[] questionWords= question.split(" ");
+
+        switch(questionWords[0]) {
+            case "who": {
+                String temp = "";
+                questionType = "who";
+                for (int i = 1; i <= questionWords.length - 1; i++) {
+                    temp = temp + " " + questionWords[i];
+                }
+                formattedQuestion = temp;
+            }
+                break;
+            case "which":{
+                String temp = "";
+                questionType = "which";
+                for (int i = 2; i <= questionWords.length - 1; i++) {
+                    temp = temp + " " + questionWords[i];
+                }
+                formattedQuestion = temp+" "+questionWords[1];
+            }
+                break;
+            case "what":{
+                String temp = "";
+                questionType = "what";
+                for (int i = 2; i <= questionWords.length - 1; i++) {
+                    temp = temp + " " + questionWords[i];
+                }
+                formattedQuestion = temp+" "+questionWords[1];
+            }
+            break;
+            case "when":{
+                String temp = "";
+                questionType = "when";
+                for (int i = 3; i <= questionWords.length - 1; i++) {
+                    temp = temp + " " + questionWords[i];
+                }
+                formattedQuestion = " "+questionWords[2]+" "+questionWords[1]+temp+" "+"on";
+            }
+                break;
+            case "where":{
+                String temp = "";
+                questionType = "where";
+                for (int i = 3; i <= questionWords.length - 1; i++) {
+                    temp = temp + " " + questionWords[i];
+                }
+                formattedQuestion = " "+questionWords[2]+" "+questionWords[1]+temp+" "+"to";
+            }
+            break;
+            case "is":{
+                String temp = "";
+                questionType = "is";
+                for (int i = 2; i <= questionWords.length - 1; i++) {
+                    temp = temp + " " + questionWords[i];
+                }
+                formattedQuestion = temp+" "+questionWords[1];
+            }
+                break;
+            default:formattedQuestion="";
+                break;
+        }
+
+        questionLst.add(questionType);
+        questionLst.add(formattedQuestion);
+        return questionLst;
+    }
+
+    private static String removePunctuationAndClean(String stringToBeClean) {
+        String cleanStr="";
+        cleanStr=stringToBeClean.replaceAll("\\s+"," ").replaceAll("[?]","");
+        return cleanStr;
+    }
+
+
+}
+
+import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.simple.Document;
+import edu.stanford.nlp.simple.Sentence;
+import edu.stanford.nlp.util.CoreMap;
+import edu.stanford.nlp.util.Quadruple;
+import rita.RiWordNet;
+
+import java.io.*;
+import java.lang.reflect.Array;
+import java.util.*;
+
+
+/**
+ * Created by shalin on 7/3/2017.
+ */
+
+public class OpenIEOper {
+
+    NLPOperations nlpOper=new NLPOperations();
+
+    static String dataPropertyFile = "E:\\Knowledge Discovery Management\\QASystem\\data\\propertiesYahoo.txt";
+    static String individualsFile = "E:\\Knowledge Discovery Management\\QASystem\\data\\individualYahoo.txt";
+    static String classFile = "E:\\Knowledge Discovery Management\\QASystem\\data\\classYahoo.txt";
+    static String objectPropertyFile = "E:\\Knowledge Discovery Management\\QASystem\\data\\objectPropertiesYahoo.txt";
+    static String tripletFile = "E:\\Knowledge Discovery Management\\QASystem\\data\\TripletFileYahoo.txt";
+
+    List<String> tempList;
+    Map<String, String> individualList;
+    Map<String, List<String>> objectProperties;
+    Map<String, String> dataProperties;
+    List<String> subjects;
+    String relationType;
+
+
+
+
+    public void GenerateFinalTriplets(String sen) throws IOException {
+        StringBuilder dataPropertyStrBuilder = new StringBuilder();
+        StringBuilder objPropertyStrBuilder = new StringBuilder();
+        StringBuilder individualPropertyStrBuilder = new StringBuilder();
+
+        Document docs = new Document(sen);
+        for (Sentence sent : docs.sentences()) {
+            Collection<Quadruple<String, String, String, Double>> triplets = sent.openie();
+            if (!triplets.isEmpty()) {
+                for (Quadruple<String, String, String, Double> triplet : triplets) {
+                    //retrieving subject from the quadruple and saving it in a list
+                    String subject = triplet.first;
+                    String relation = triplet.second;
+                    String object = triplet.third;
+                    String subjectNER = nlpOper.GetNER(subject);
+                    String objNER = nlpOper.GetNER(object);
+                    tempList.clear();
+
+                    if (subjectNER.equals("O")) {
+                        subjects.add(subject);
+                        tempList.add(subject);
+                        if (objNER.equals("O")) {
+                            tempList.add(object);
+                        } else {
+                            tempList.add(objNER);
+                        }
+                        objectProperties.put(relation, tempList);
+                    } else {
+                        individualList.put(subjectNER, subject);
+                        tempList.add(subjectNER);
+                        if (objNER.equals("O")) {
+                            tempList.add(object);
+                        } else {
+                            tempList.add(objNER);
+                        }
+                    }
+
+                    //retrieving object from the quadruple and saving it in a list
+                    if (objNER.equals("O")) {
+                        subjects.add(object);
+                    } else {
+                        dataProperties.put("relatedTo", objNER);
+                    }
+
+                    //retrieving predicates from the quadruple
+
+                    if (objNER.equals("O"))
+                        relationType = "Obj";
+                    else
+                        relationType = "Data";
+
+                    String generatedTriplet = subject + "," + relation + "," + object + "," + relationType;
+                    ReadWriteOperation.WriteToFile(generatedTriplet, tripletFile);
+
+                    if (objectProperties.isEmpty()) {
+
+                        for (String key : dataProperties.keySet()) {
+                            dataPropertyStrBuilder.append(key);
+                        }
+                        for (String val : dataProperties.values()) {
+                            dataPropertyStrBuilder.append(",");
+                            dataPropertyStrBuilder.append(val);
+                        }
+                        ReadWriteOperation.WriteToFile(dataPropertyStrBuilder.toString(), dataPropertyFile);
+                    } else {
+                        String keyObj = "";
+                        for (String key : objectProperties.keySet()) {
+                            objPropertyStrBuilder.append(key);
+                            keyObj = key;
+                        }
+                        for (String val : objectProperties.get(keyObj)) {
+                            objPropertyStrBuilder.append(",");
+                            objPropertyStrBuilder.append(val);
+                        }
+                        objPropertyStrBuilder.append(",Func");
+                        ReadWriteOperation.WriteToFile(objPropertyStrBuilder.toString(), objectPropertyFile);
+                    }
+                    for (String val : subjects) {
+                        ReadWriteOperation.WriteToFile(val, classFile);
+                    }
+
+
+                    for (String key : individualList.keySet()) {
+                        individualPropertyStrBuilder.append(key);
+                    }
+                    for (String val : individualList.values()) {
+                        individualPropertyStrBuilder.append(",");
+                        individualPropertyStrBuilder.append(val);
+                    }
+                    //indLst.add(individualPropertyStrBuilder.toString());
+                    ReadWriteOperation.WriteToFile(individualPropertyStrBuilder.toString(), individualsFile);
+
+
+
+/*
+                stripDuplicatesFromFile("ObjectProperties");
+                stripDuplicatesFromFile("Individuals");
+                stripDuplicatesFromFile("DataProperties");
+                stripDuplicatesFromFile("Clas");*/
+                }
+            }
+        }
+    }
+
+    public static HashSet<String> getSynonyms(String word) {
+        RiWordNet wordnet = new RiWordNet("E:\\Knowledge Discovery Management\\WordNet-3.0\\WordNet-3.0");
+        String[] poss = wordnet.getPos(word);
+        HashSet<String> synonym = new HashSet<>();
+        for (int j = 0; j < poss.length; j++) {
+            System.out.println("\n\nSynonyms for " + word + " (pos: " + poss[j] + ")");
+            String[] synonyms = wordnet.getAllSynonyms(word, poss[j], 10);
+            for (int i = 0; i < synonyms.length; i++) {
+                synonym.add(synonyms[i]);
+            }
+        }
+        return synonym;
+    }
+
+    public static void RemoveDuplicatesFromFile (String filename) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(filename));
+            Set<String> lines = new HashSet<String>();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                lines.add(line);
+            }
+            reader.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
+            for (String unique : lines) {
+                writer.write(unique);
+                writer.newLine();
+            }
+            writer.close();
+
+        } catch (IOException io) {
+
+        }
+    }
+}
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import java.io.BufferedInputStream;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by shalin on 7/2/2017.
+ */
+public class ConceptNet {
+    public static List<String> GetConcept(String data) {
+        HttpClient httpClient = new DefaultHttpClient();
+        String line = "";
+        List<String> conceptArray=new ArrayList<>();
+        try {
+            HttpGet httpGetReq = new HttpGet("http://api.conceptnet.io/c/en/"+data);
+            HttpResponse httpRes = httpClient.execute(httpGetReq);
+
+            HttpEntity entity = httpRes.getEntity();
+
+            byte[] buffer = new byte[1024];
+            if (entity != null) {
+                InputStream inputStream = entity.getContent();
+                int bytesRead = 0;
+                BufferedInputStream bis = new BufferedInputStream(inputStream);
+                while ((bytesRead = bis.read(buffer)) != -1) {
+                    String chunk = new String(buffer, 0, bytesRead);
+                    line += chunk;
+                }
+
+                inputStream.close();
+            }
+            JSONParser jParser = new JSONParser();
+            JSONObject jsonData = (JSONObject) jParser.parse(line);
+            JSONArray ja = (JSONArray) jsonData.get("edges");
+            for (int i = 0; i < ja.size(); i++) {
+                JSONObject ob = (JSONObject) ja.get(i);
+                conceptArray.add(ob.get("surfaceText").toString());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            httpClient.getConnectionManager().shutdown();
+            return conceptArray;
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

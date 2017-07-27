@@ -1,0 +1,1552 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/Shalin/ontologies/2017/6/YahooAnswerOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/Shalin/ontologies/2017/6/YahooAnswerOntology#">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="Guide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Lord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Men"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Pilgrim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Potions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="President"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Rings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="anyone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="del"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="fiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="marigold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="neville"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="theory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="way"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Apocalypse Intelligent design movement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Black comedy Fan fiction Anne Rice Academy Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Children Free"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Daredevil Poker jargon Dad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Dead Opus Dei Paul Zindel Publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Elderlings/Characters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Greyhawk Elf Big Read Orc Planets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Grim Adventures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Harry Potter &apos;s year Ron Weasley Blood purity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Historical Review Deconstruction Answers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="John Howard Yoder Topos Wendy Cope Joke Athol Fugard Surreal number Discordianism Noah Webster A Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Lithuania Garfield South Park Shaggy dog story Recurring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Miracles Alcoholics Anonymous Confidence trick"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Modern Life Angel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Season Rocko"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Unfortunate Events"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="World War II Samuel Goldwyn Concentration camp Theresienstadt Megan Griffin Plame affair Mein Kampf Heterosexuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="anansi boys"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="anne frank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="forgotten realms series lemoni"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="good book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="hoax i"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="i like books"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="incompleteness theorem Holocaust theology Bill White Dilbert Fallacy of many questions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="last book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="literature of Unfortunate Events"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="neil gaiman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="once marigold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="science fiction Weapons of Middle-earth Dark Lord One Ring Warcraft Universe Lord of Rings movie trilogy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="snicket series of unfortunate events"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="views on religion Publishing Zohar Leviathan Heinrich M __ ller Charmed Tokusou Sentai Deka Ranger History of English Bible Frankie Laine Underground Railroad Transactional analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="whole thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="wording of prophecy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="marigold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="once marigold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="theory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Children Free"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="life Hogwarts Philosophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="literature of Unfortunate Events"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Pilgrim"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is inis withhas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Two Towers Dune universe Emily Browning Lance Parkin Murtagh Star Wars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="del"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Two Towers Dune universe Emily Browning Lance Parkin Murtagh Star WarsPERSON"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Daredevil Poker jargon Dad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Lord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="whole thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="i"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="anyone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="incompleteness theorem Holocaust theology Bill White Dilbert Fallacy of many questions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="has read"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Grim Adventures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="u"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Edward Plunkett"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="has readhas read book upon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is Inhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="anne frank"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="has readhas read book uponqualities of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Culture of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="has read book upon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="views on religion Publishing Zohar Leviathan Heinrich M __ ller Charmed Tokusou Sentai Deka Ranger History of English Bible Frankie Laine Underground Railroad Transactional analysis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="anansi boys"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Taliesin CatcherPERSON"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Book Seven Ginny Weasley Gryffindors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="President"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="character"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="relatedTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Modern Life Angel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is inhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="John Howard Yoder Topos Wendy Cope Joke Athol Fugard Surreal number Discordianism Noah Webster A Course"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Dragonlance Eragon A Series"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="qualities of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="u"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="hoax i"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ORGANIZATION"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is In"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Simpsons Voynich manuscript Fred A. Leuchter Stupidity Auschwitz concentration camp Apollo moon landing hoax accusations British National Party Martin HeideggerPERSON"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Christianity Richard III"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Taliesin Catcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PERSON"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Miracles Alcoholics Anonymous Confidence trick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Historical Review Deconstruction Answers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="of Series is"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MISC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Season Rocko"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Harry Potter &apos;s year Ron Weasley Blood purity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="readneedhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Hitchhiker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="wording of prophecy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Greyhawk Elf Big Read Orc Planets"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Elderlings/Characters"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Men"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Apocalypse Intelligent design movement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="fiction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="last book"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Sword Charles Darwin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="read"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="neil gaiman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="good book"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="need"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Dead Opus Dei Paul Zindel Publication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is inRealm of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Lithuania Garfield South Park Shaggy dog story Recurring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Day of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="book"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Unfortunate Events"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="science fiction Weapons of Middle-earth Dark Lord One Ring Warcraft Universe Lord of Rings movie trilogy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Simpsons Voynich manuscript Fred A. Leuchter Stupidity Auschwitz concentration camp Apollo moon landing hoax accusations British National Party Martin Heidegger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="forgotten realms series lemoni"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="diary of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="readhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Black comedy Fan fiction Anne Rice Academy Award"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Potions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Rings"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="way"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Edward PlunkettPERSON"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Darwin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="snicket series of unfortunate events"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="World War II Samuel Goldwyn Concentration camp Theresienstadt Megan Griffin Plame affair Mein Kampf Heterosexuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Guide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Christianity Richard IIIPERSON"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i like books"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Realm of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="neville"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Harry Potter Dumbledore"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Christianity Richard III"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Christianity Richard IIIPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Christianity Richard IIIPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Christianity Richard IIIPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Christianity Richard IIIPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Christianity Richard IIIPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Christianity Richard IIIPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Christianity Richard IIIPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Christianity Richard IIIPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Christianity Richard IIIPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Edward Plunkett"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Edward PlunkettPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Edward PlunkettPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Edward PlunkettPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Edward PlunkettPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Edward PlunkettPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Simpsons Voynich manuscript Fred A. Leuchter Stupidity Auschwitz concentration camp Apollo moon landing hoax accusations British National Party Martin Heidegger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Simpsons Voynich manuscript Fred A. Leuchter Stupidity Auschwitz concentration camp Apollo moon landing hoax accusations British National Party Martin HeideggerPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Taliesin Catcher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Taliesin CatcherPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Taliesin CatcherPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Two Towers Dune universe Emily Browning Lance Parkin Murtagh Star Wars"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Two Towers Dune universe Emily Browning Lance Parkin Murtagh Star WarsPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Two Towers Dune universe Emily Browning Lance Parkin Murtagh Star WarsPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Two Towers Dune universe Emily Browning Lance Parkin Murtagh Star WarsPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Two Towers Dune universe Emily Browning Lance Parkin Murtagh Star WarsPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Two Towers Dune universe Emily Browning Lance Parkin Murtagh Star WarsPERSON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Two Towers Dune universe Emily Browning Lance Parkin Murtagh Star WarsPERSON"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="of"/>
+        <NamedIndividual IRI="Darwin"/>
+        <NamedIndividual IRI="theory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="Hitchhiker"/>
+        <NamedIndividual IRI="Guide"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="President"/>
+        <NamedIndividual IRI="Men"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has read"/>
+        <NamedIndividual IRI="anyone"/>
+        <NamedIndividual IRI="book"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has read book upon"/>
+        <NamedIndividual IRI="anyone"/>
+        <NamedIndividual IRI="marigold"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has read book upon"/>
+        <NamedIndividual IRI="anyone"/>
+        <NamedIndividual IRI="once marigold"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="del"/>
+        <NamedIndividual IRI="incompleteness theorem Holocaust theology Bill White Dilbert Fallacy of many questions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="need"/>
+        <NamedIndividual IRI="i"/>
+        <NamedIndividual IRI="book"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="need"/>
+        <NamedIndividual IRI="i"/>
+        <NamedIndividual IRI="good book"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="read"/>
+        <NamedIndividual IRI="i"/>
+        <NamedIndividual IRI="i"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="read"/>
+        <NamedIndividual IRI="i"/>
+        <NamedIndividual IRI="i like books"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="neville"/>
+        <NamedIndividual IRI="character"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="qualities of"/>
+        <NamedIndividual IRI="u"/>
+        <NamedIndividual IRI="marigold"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is in"/>
+        <NamedIndividual IRI="way"/>
+        <NamedIndividual IRI="last book"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is in"/>
+        <NamedIndividual IRI="Black comedy Fan fiction Anne Rice Academy Award"/>
+        <NamedIndividual IRI="literature of Unfortunate Events"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is in"/>
+        <NamedIndividual IRI="Book Seven Ginny Weasley Gryffindors"/>
+        <NamedIndividual IRI="Harry Potter &apos;s year Ron Weasley Blood purity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="Meaning of"/>
+        <NamedIndividual IRI="Christianity Richard III"/>
+        <NamedIndividual IRI="Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="Daredevil Poker jargon Dad"/>
+        <NamedIndividual IRI="Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="Day of"/>
+        <NamedIndividual IRI="Edward Plunkett"/>
+        <NamedIndividual IRI="Dead Opus Dei Paul Zindel Publication"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is in"/>
+        <NamedIndividual IRI="Greyhawk Elf Big Read Orc Planets"/>
+        <NamedIndividual IRI="science fiction Weapons of Middle-earth Dark Lord One Ring Warcraft Universe Lord of Rings movie trilogy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is in"/>
+        <NamedIndividual IRI="Grim Adventures"/>
+        <NamedIndividual IRI="World War II Samuel Goldwyn Concentration camp Theresienstadt Megan Griffin Plame affair Mein Kampf Heterosexuality"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is in"/>
+        <NamedIndividual IRI="His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs"/>
+        <NamedIndividual IRI="fiction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is In"/>
+        <NamedIndividual IRI="John Howard Yoder Topos Wendy Cope Joke Athol Fugard Surreal number Discordianism Noah Webster A Course"/>
+        <NamedIndividual IRI="Miracles Alcoholics Anonymous Confidence trick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="Season Rocko"/>
+        <NamedIndividual IRI="Modern Life Angel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is with"/>
+        <NamedIndividual IRI="Simpsons Voynich manuscript Fred A. Leuchter Stupidity Auschwitz concentration camp Apollo moon landing hoax accusations British National Party Martin Heidegger"/>
+        <NamedIndividual IRI="Children Free"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="Sword Charles Darwin"/>
+        <NamedIndividual IRI="views on religion Publishing Zohar Leviathan Heinrich M __ ller Charmed Tokusou Sentai Deka Ranger History of English Bible Frankie Laine Underground Railroad Transactional analysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="Lord of"/>
+        <NamedIndividual IRI="Two Towers Dune universe Emily Browning Lance Parkin Murtagh Star Wars"/>
+        <NamedIndividual IRI="Rings"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="Realm of"/>
+        <NamedIndividual IRI="Unfortunate Events"/>
+        <NamedIndividual IRI="Elderlings/Characters"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="of Series is"/>
+        <NamedIndividual IRI="Unfortunate Events"/>
+        <NamedIndividual IRI="Lord"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="forgotten realms series lemoni"/>
+        <NamedIndividual IRI="snicket series of unfortunate events"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="diary of"/>
+        <NamedIndividual IRI="hoax i"/>
+        <NamedIndividual IRI="anne frank"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="Culture of"/>
+        <NamedIndividual IRI="life Hogwarts Philosophy"/>
+        <NamedIndividual IRI="Lithuania Garfield South Park Shaggy dog story Recurring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="neil gaiman"/>
+        <NamedIndividual IRI="anansi boys"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is with"/>
+        <NamedIndividual IRI="whole thing"/>
+        <NamedIndividual IRI="wording of prophecy"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="has"/>
+        <NamedIndividual IRI="Pilgrim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Progress Carlos Castaneda Nation of Islam</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="is in"/>
+        <NamedIndividual IRI="Potions"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Harry Potter Eschatology Presidential system Jacques-B __ nigne Bossuet Grim Adventures of Billy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="is in"/>
+        <NamedIndividual IRI="Apocalypse Intelligent design movement"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Harry Potter Dumbledore &apos;s Army Severus Snape Harry Potter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Meaning of"/>
+        <NamedIndividual IRI="Christianity Richard III"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Edd n Eddy Big Brother Martin Sharp Culture</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Meaning of"/>
+        <NamedIndividual IRI="Christianity Richard III"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">life Hogwarts Philosophy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Meaning of"/>
+        <NamedIndividual IRI="Christianity Richard III"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">life Hogwarts Philosophy of language Empire Burlesque Joachim von Ribbentrop Ed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Lord of"/>
+        <NamedIndividual IRI="Dragonlance Eragon A Series"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Rings Young adult literature C. S. Lewis Lemony Snicket J. R. R. Tolkien</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="in"/>
+        <NamedIndividual IRI="Harry Potter Dumbledore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Army Severus Snape Harry Potter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="is in"/>
+        <NamedIndividual IRI="Historical Review Deconstruction Answers"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Genesis Theodicy People associated with Anne Frank Holocaust Propaganda Irony</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="is in"/>
+        <NamedIndividual IRI="Taliesin Catcher"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Rye Andy Kaufman Development hell Scouting Anubis 20th Century Fox Beavis</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="President"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="President"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="President"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="President"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Daredevil Poker jargon Dad"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Daredevil Poker jargon Dad"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Season Rocko"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="neil gaiman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="read"/>
+        <Class IRI="i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="read"/>
+        <Class IRI="i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="read"/>
+        <Class IRI="i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="read"/>
+        <Class IRI="i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="forgotten realms series lemoni"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="forgotten realms series lemoni"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="forgotten realms series lemoni"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="forgotten realms series lemoni"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="readneedhas"/>
+        <Class IRI="i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="readneedhas"/>
+        <Class IRI="i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="readneedhas"/>
+        <Class IRI="i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="diary of"/>
+        <Class IRI="hoax i"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has read book upon"/>
+        <Class IRI="anyone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has read book upon"/>
+        <Class IRI="anyone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has read book upon"/>
+        <Class IRI="anyone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has read book upon"/>
+        <Class IRI="anyone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has readhas read book upon"/>
+        <Class IRI="anyone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has readhas read book upon"/>
+        <Class IRI="anyone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has readhas read book upon"/>
+        <Class IRI="anyone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has readhas read book upon"/>
+        <Class IRI="anyone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has readhas read book uponqualities of"/>
+        <Class IRI="u"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="Pilgrim"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="Pilgrim"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="John Howard Yoder Topos Wendy Cope Joke Athol Fugard Surreal number Discordianism Noah Webster A Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="John Howard Yoder Topos Wendy Cope Joke Athol Fugard Surreal number Discordianism Noah Webster A Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="John Howard Yoder Topos Wendy Cope Joke Athol Fugard Surreal number Discordianism Noah Webster A Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Potions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Potions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Potions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Potions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="way"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="way"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="way"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Apocalypse Intelligent design movement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Apocalypse Intelligent design movement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Apocalypse Intelligent design movement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Apocalypse Intelligent design movement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Apocalypse Intelligent design movement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Apocalypse Intelligent design movement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Black comedy Fan fiction Anne Rice Academy Award"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Black comedy Fan fiction Anne Rice Academy Award"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Black comedy Fan fiction Anne Rice Academy Award"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Black comedy Fan fiction Anne Rice Academy Award"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Black comedy Fan fiction Anne Rice Academy Award"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="His Dark Materials Eldest Fantasy The Foundation Series Wizard Messiahs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Historical Review Deconstruction Answers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Historical Review Deconstruction Answers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Historical Review Deconstruction Answers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Historical Review Deconstruction Answers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="del"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="del"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="del"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="neville"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="Grim Adventures"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inRealm of"/>
+        <Class IRI="Unfortunate Events"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inRealm of"/>
+        <Class IRI="Unfortunate Events"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inRealm of"/>
+        <Class IRI="Unfortunate Events"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inRealm of"/>
+        <Class IRI="Unfortunate Events"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="MISC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="MISC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="Greyhawk Elf Big Read Orc Planets"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="Unfortunate Events"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="Unfortunate Events"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="Unfortunate Events"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inis withhas"/>
+        <Class IRI="whole thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Men"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Men"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Men"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Men"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Modern Life Angel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="anansi boys"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="read"/>
+        <Class IRI="i"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="read"/>
+        <Class IRI="i"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="read"/>
+        <Class IRI="i"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="read"/>
+        <Class IRI="i"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="i like books"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="i like books"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="i like books"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="snicket series of unfortunate events"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="snicket series of unfortunate events"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="snicket series of unfortunate events"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="readhas"/>
+        <Class IRI="snicket series of unfortunate events"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="readneedhas"/>
+        <Class IRI="book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="readneedhas"/>
+        <Class IRI="good book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="readneedhas"/>
+        <Class IRI="good book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="diary of"/>
+        <Class IRI="anne frank"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has read book upon"/>
+        <Class IRI="marigold"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has read book upon"/>
+        <Class IRI="marigold"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has read book upon"/>
+        <Class IRI="marigold"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has read book upon"/>
+        <Class IRI="marigold"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has readhas read book upon"/>
+        <Class IRI="book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has readhas read book upon"/>
+        <Class IRI="book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has readhas read book upon"/>
+        <Class IRI="once marigold"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has readhas read book upon"/>
+        <Class IRI="once marigold"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has readhas read book uponqualities of"/>
+        <Class IRI="marigold"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="ORGANIZATION"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="ORGANIZATION"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="theory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="Miracles Alcoholics Anonymous Confidence trick"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="Miracles Alcoholics Anonymous Confidence trick"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inhas"/>
+        <Class IRI="Miracles Alcoholics Anonymous Confidence trick"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Guide"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="ORGANIZATION"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="fiction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="fiction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="fiction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="fiction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="fiction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="fiction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="Edd n Eddy Big Brother Martin Sharp Culture of Lithuania Garfield South Park Shaggy dog story"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="last book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="last book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="last book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="literature of Unfortunate Events"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="literature of Unfortunate Events"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="literature of Unfortunate Events"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="literature of Unfortunate Events"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="literature of Unfortunate Events"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="Children Free"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="Children Free"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="World War II Samuel Goldwyn Concentration camp Theresienstadt Megan Griffin Plame affair Mein Kampf Heterosexuality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="incompleteness theorem Holocaust theology Bill White Dilbert Fallacy of many questions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="incompleteness theorem Holocaust theology Bill White Dilbert Fallacy of many questions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="incompleteness theorem Holocaust theology Bill White Dilbert Fallacy of many questions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inRealm of"/>
+        <Class IRI="Elderlings/Characters"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inRealm of"/>
+        <Class IRI="Elderlings/Characters"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inRealm of"/>
+        <Class IRI="Elderlings/Characters"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inRealm of"/>
+        <Class IRI="Elderlings/Characters"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="Lord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="Lord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="Lord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inRealm ofof Series is"/>
+        <Class IRI="science fiction Weapons of Middle-earth Dark Lord One Ring Warcraft Universe Lord of Rings movie trilogy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inis withhas"/>
+        <Class IRI="wording of prophecy"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="relatedTo"/>
+        <Class IRI="PERSON"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="relatedTo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0.2017-03-29T23:31:42Z) https://github.com/owlcs/owlapi/ -->
+
+

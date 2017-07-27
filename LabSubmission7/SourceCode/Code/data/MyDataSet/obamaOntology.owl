@@ -1,0 +1,3955 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/Shalin/ontologies/2017/6/ObamaOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/Shalin/ontologies/2017/6/ObamaOntology#">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="He"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="President"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="University"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="active"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="aisle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="army"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="available"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="based"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="bit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="born"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="claim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="closure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="club"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="college"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="communities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="couple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="disaffection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="fact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="gone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="government"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="graduation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="he"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="heartland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="help"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="himself"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="it"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="known"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="neville"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="opposite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="parents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="pot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="raised"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="slang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="something"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="story"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="they"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="transparency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="trends"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="variations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="way"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="world"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="you"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="44th President"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="American story"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="American story values"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="American story values from heartland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bill Clinton &apos;s claim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Daredevil Poker jargon Dad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="His story"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Modern Life Angel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="One notable exception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Season Rocko"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="United States Senator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ability unite around politics of purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="active in his community"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="anansi boys"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="bit from ceiling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="bit of smoke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="bit of smoke from ceiling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="classmate &apos;s van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="classmate &apos;s new van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="classmate &apos;s sparkling van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="classmate &apos;s sparkling new van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="closure of local steel plants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="closure of steel plants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="communities devastated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="communities devastated by closure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="communities devastated by closure of local steel plants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="communities devastated by closure of steel plants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="constitutional law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="couple of kids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="couple of Hawaiian kids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="decent students"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="dorm room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="dorm room of brother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="few trends"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="few pot-smoking trends"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="gay lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="groundbreaking lobbying reform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="group of churches"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="help of scholarships"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="high school buddies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="high school kid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="his belief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="his way"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="his wife"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="his 1995 memoir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="his belief in ability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="his pot smoking buddies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="his unwavering belief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="his unwavering belief in ability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="last bit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="last book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="last bit from ceiling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="last bit of smoke"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="last bit of smoke from ceiling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="lobbying reform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="local variations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="local variations of pakalolo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="middle-class upbringing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="most dangerous weapons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="neil gaiman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="notable exception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="old high school buddies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="other variations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="other local variations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="other local variations of pakalolo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="other variations of pakalolo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="pot dealer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="pot-smoking trends"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="proud parents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="readily available"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="rebuild communities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="rebuild communities devastated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="rebuild communities devastated by closure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="rebuild communities devastated by closure of local steel plants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="rebuild communities devastated by closure of steel plants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="school kid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="scorned lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="scorned gay lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="smoking marijuana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="smoking pot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="sparkling new van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="story values"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="story values from heartland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="strong family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="two daughters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="variations of pakalolo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="when gone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="white classmate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="white classmate &apos;s van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="white classmate &apos;s new van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="white classmate &apos;s sparkling van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="white classmate &apos;s sparkling new van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="whole thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="wording of prophecy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by gay lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by gay lover armed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by gay lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by gay lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by lover armed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by scorned lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by scorned gay lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by scorned gay lover armed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by scorned gay lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by scorned gay lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by scorned lover armed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by scorned lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would killed by scorned lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by gay lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by gay lover armed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by gay lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by gay lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by lover armed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by scorned lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by scorned gay lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by scorned gay lover armed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by scorned gay lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by scorned gay lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by scorned lover armed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by scorned lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="would later killed by scorned lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="years of public service"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Bill Clinton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="story values from heartland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="character"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="himself"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="they"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="upbringing in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="bring transparency to"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by gay lover"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="neville"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="active in his community"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="his belief in ability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="other variations of pakalolo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="President Obama &apos;s years"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="couple of Hawaiian kids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by scorned lover"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="last bit of smoke from ceiling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="raised"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="was born in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="his 1995 memoir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by scorned lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by scorned gay lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="parents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is Inarmed withhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Barack H. Obama"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="working through"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="are proud parents of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="working"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Barack Obama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="high school buddies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="other variations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="when gone"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sucked in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Hawaii"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="slang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Obama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="pot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="notable exception"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="based"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="other local variations"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="club"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="is 44th President of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="wrote As"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by gay lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="story"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="closure of local steel plants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="classmate &apos;s sparkling new van"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by scorned gay lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LOCATION"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="white classmate &apos;s sparkling new van"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="local variations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="white classmate &apos;s sparkling van"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="One notable exception"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="writes about"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="was raised with"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="law"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="scorned lover"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="American story"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rebuild communities devastated by closure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DATE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="local variations of pakalolo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="aisle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="are based around"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by lover"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="upbringing inis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="groundbreaking lobbying reform"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by scorned gay lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Daredevil Poker jargon Dad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Bill Clinton &apos;s claim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Season Rocko"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke withsmoke in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="communities devastated by closure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="be"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sucked inwas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="pass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="claim"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="wereclub"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke here"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="closure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="on"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="whole thing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="opposite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="readily available"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="help of scholarships"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="army"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="helpdevastated by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="passis inbringhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="His story"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="his unwavering belief in ability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="way"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="his belief"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="help"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="few trends"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="years"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="college"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rebuild communities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="communities devastated by closure of local steel plants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="born"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="was electedareproud parentsare parents ofare proud parents ofwas elected President onparents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke withwould smoke onsmoke in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="his wife"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rebuild communities devastated by closure of local steel plants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="school kid"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="is President of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="his way"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="neil gaiman"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="wereclubwere club of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="American story values from heartland"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="were"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by gay lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rebuild communities devastated by closure of steel plants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="old high school buddies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="heartland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="member"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="bring transparency toreached Aspassis inbringreached acrosshas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="was opposite of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="President Obama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="few pot-smoking trends"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="worked with"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="President"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ORGANIZATION"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="world"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by gay lover armed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke here there"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="couple"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by scorned lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by scorned gay lover armed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by scorned lover armed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DURATION"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="other local variations of pakalolo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="TA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="was slang for"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by lover armed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke anywhere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Maui Wowie"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="was electedproud parentswas elected President on"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="available"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="government"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="proud parents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="gay lover"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="last book"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by lover"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="fact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is inis withhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by scorned gay lover"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="story values"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="trends"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="dealer &apos;s"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="something"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="reached Aspassis inbringreached acrosshas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="variations of pakalolo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="young Barry Obama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="graduation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="44th President"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="passis inhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rebuild communities devastated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="classmate &apos;s new van"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by scorned gay lover armed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="high school kid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="available"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="reached As"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="was something of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="you"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Patton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="white classmate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="dorm room"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="group of churches"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Ray"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="classmate &apos;s sparkling van"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="pot-smoking trends"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="strong family"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is In"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by gay lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="anansi boys"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="wording of prophecy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="classmate &apos;s van"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="passis in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is inhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="last bit of smoke"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="working with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="were club of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by scorned gay lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="pot dealer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="active"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ability unite around politics of purpose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="variations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by scorned lover"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="United States Senator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is Inarmed with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="reached Aspassis inbringhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="disaffection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="relatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke herewould smoke anywherewould smoke therewould smoke here therewould smoke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="communities devastated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="armed with"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="smoking marijuana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="lobbying reform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="were withwaswas opposite of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="smoke in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="remain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="was electedproud parentsare proud parents ofwas elected President onparents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="teach law atteachreturned Uponreturned"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PERSON"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="teach law atremainteachreturned toreturned Uponreturned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="devastated by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="was electedwas elected President on"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="smoking pot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="are"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="scorned gay lover"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by gay lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="was raised withwas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="white classmate &apos;s new van"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by gay lover armed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="closure of steel plants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by scorned lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="car"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="writes In"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="parents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Choom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="was electedareproud parentsare proud parents ofwas elected President onparents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="transparency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="constitutional law"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="communities devastated by closure of steel plants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="decent students"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="his pot smoking buddies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="he"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="was electedproud parentswas elected President onparents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="upbringing inis in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sucked inwaswere chooming in"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="were with"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by scorned lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="white classmate &apos;s van"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="communities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="He"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke here therewould smoke"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke herewould smoke therewould smoke here therewould smoke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="most dangerous weapons"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="reached across"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Barry Obama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by lover armed with ball-peen hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="bit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="returned Upon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="readily available"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed by scorned lover armed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="American story values"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="proud parents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="two daughters"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="known"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would later killed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="bit from ceiling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="starting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="it"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="teach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Modern Life Angel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="lover"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="waswas opposite of"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="group"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke therewould smoke here therewould smoke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by lover armed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="help"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="middle-class upbringing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="club"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke there"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="returned"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="good"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="couple of kids"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="are parents of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="&apos;s buddies is"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="last bit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Taliesin Catcher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="his unwavering belief"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="bring"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="returned to"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="bit of smoke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Maraniss"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="was born on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="would smoke with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="upbringing inis inis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="last bit from ceiling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="father"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="were chooming in"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by scorned gay lover armed with hammer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="would killed by gay lover"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="teach law atteach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="years of public service"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="University"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="teach law atteachreturned Upon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PERSONDURATION"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="teach law atremainteachreturned Uponreturned"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="bit of smoke from ceiling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="sparkling new van"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="gone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="writes like"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="dorm room of brother"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Choom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="LOCATION"/>
+        <NamedIndividual IRI="Hawaii"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Maraniss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Obama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Patton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSONDURATION"/>
+        <NamedIndividual IRI="Ray"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="DURATION"/>
+        <NamedIndividual IRI="years"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Barack Obama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Barack H. Obama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Barry Obama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Bill Clinton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="President Obama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSONDURATION"/>
+        <NamedIndividual IRI="President Obama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="DURATION"/>
+        <NamedIndividual IRI="President Obama &apos;s years"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="Taliesin Catcher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PERSON"/>
+        <NamedIndividual IRI="young Barry Obama"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was"/>
+        <NamedIndividual IRI="Choom"/>
+        <NamedIndividual IRI="slang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was slang for"/>
+        <NamedIndividual IRI="Choom"/>
+        <NamedIndividual IRI="smoking marijuana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was"/>
+        <NamedIndividual IRI="Hawaii"/>
+        <NamedIndividual IRI="something"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="are"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="parents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="are"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="proud parents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="parents"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="his wife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="raised"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="are parents of"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="two daughters"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="are proud parents of"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="two daughters"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="proud parents"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="his wife"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was elected"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="President"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was elected"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="44th President"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was raised with"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="help"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would smoke"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="it"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would smoke anywhere"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="it"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would smoke here"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="it"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would smoke there"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="it"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would smoke here there"/>
+        <NamedIndividual IRI="He"/>
+        <NamedIndividual IRI="it"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writes As"/>
+        <NamedIndividual IRI="Maraniss"/>
+        <NamedIndividual IRI="member"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="of"/>
+        <NamedIndividual IRI="Obama"/>
+        <NamedIndividual IRI="old high school buddies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writes In"/>
+        <NamedIndividual IRI="Obama"/>
+        <NamedIndividual IRI="his 1995 memoir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writes about"/>
+        <NamedIndividual IRI="Obama"/>
+        <NamedIndividual IRI="smoking pot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="wrote As"/>
+        <NamedIndividual IRI="Obama"/>
+        <NamedIndividual IRI="high school kid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="wrote As"/>
+        <NamedIndividual IRI="Obama"/>
+        <NamedIndividual IRI="school kid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="in"/>
+        <NamedIndividual IRI="Patton"/>
+        <NamedIndividual IRI="army"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="dealer &apos;s"/>
+        <NamedIndividual IRI="Ray"/>
+        <NamedIndividual IRI="group"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was"/>
+        <NamedIndividual IRI="TA"/>
+        <NamedIndividual IRI="opposite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was opposite of"/>
+        <NamedIndividual IRI="TA"/>
+        <NamedIndividual IRI="Bill Clinton &apos;s claim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="devastated by"/>
+        <NamedIndividual IRI="communities"/>
+        <NamedIndividual IRI="closure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="devastated by"/>
+        <NamedIndividual IRI="communities"/>
+        <NamedIndividual IRI="closure of local steel plants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="devastated by"/>
+        <NamedIndividual IRI="communities"/>
+        <NamedIndividual IRI="closure of steel plants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="group"/>
+        <NamedIndividual IRI="pot dealer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="bring"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="transparency"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="club"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="his pot smoking buddies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="help"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="communities"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="help"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="communities devastated"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="help"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="communities devastated by closure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="help"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="communities devastated by closure of local steel plants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="help"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="communities devastated by closure of steel plants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="help"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="rebuild communities"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="help"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="rebuild communities devastated"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="help"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="rebuild communities devastated by closure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="help"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="rebuild communities devastated by closure of local steel plants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="help"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="rebuild communities devastated by closure of steel plants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="pass"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="groundbreaking lobbying reform"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="pass"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="lobbying reform"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="remain"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="active"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="remain"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="active in his community"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="returned"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="help"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="teach"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="law"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="teach"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="constitutional law"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="were"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="club"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="bring transparency to"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="government"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="reached As"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="United States Senator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="reached across"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="aisle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="returned Upon"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="graduation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="smoke in"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="classmate &apos;s van"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="smoke in"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="classmate &apos;s new van"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="smoke in"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="classmate &apos;s sparkling van"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="smoke in"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="classmate &apos;s sparkling new van"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="smoke in"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="dorm room"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="smoke in"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="dorm room of brother"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="smoke in"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="white classmate &apos;s van"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="smoke in"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="white classmate &apos;s new van"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="smoke in"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="white classmate &apos;s sparkling van"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="smoke in"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="white classmate &apos;s sparkling new van"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="teach law at"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="University"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="were club of"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="disaffection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="worked with"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="group"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="worked with"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="group of churches"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would smoke on"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="beach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would smoke with"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="couple"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would smoke with"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="couple of kids"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would smoke with"/>
+        <NamedIndividual IRI="he"/>
+        <NamedIndividual IRI="couple of Hawaiian kids"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="upbringing in"/>
+        <NamedIndividual IRI="heartland"/>
+        <NamedIndividual IRI="strong family"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="be"/>
+        <NamedIndividual IRI="himself"/>
+        <NamedIndividual IRI="good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="armed with"/>
+        <NamedIndividual IRI="lover"/>
+        <NamedIndividual IRI="hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="armed with"/>
+        <NamedIndividual IRI="lover"/>
+        <NamedIndividual IRI="ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="neville"/>
+        <NamedIndividual IRI="character"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was"/>
+        <NamedIndividual IRI="pot"/>
+        <NamedIndividual IRI="gone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was"/>
+        <NamedIndividual IRI="pot"/>
+        <NamedIndividual IRI="when gone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="sucked in"/>
+        <NamedIndividual IRI="they"/>
+        <NamedIndividual IRI="bit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="sucked in"/>
+        <NamedIndividual IRI="they"/>
+        <NamedIndividual IRI="bit from ceiling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="sucked in"/>
+        <NamedIndividual IRI="they"/>
+        <NamedIndividual IRI="bit of smoke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="sucked in"/>
+        <NamedIndividual IRI="they"/>
+        <NamedIndividual IRI="bit of smoke from ceiling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="sucked in"/>
+        <NamedIndividual IRI="they"/>
+        <NamedIndividual IRI="last bit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="sucked in"/>
+        <NamedIndividual IRI="they"/>
+        <NamedIndividual IRI="last bit from ceiling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="sucked in"/>
+        <NamedIndividual IRI="they"/>
+        <NamedIndividual IRI="last bit of smoke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="sucked in"/>
+        <NamedIndividual IRI="they"/>
+        <NamedIndividual IRI="last bit of smoke from ceiling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="were chooming in"/>
+        <NamedIndividual IRI="they"/>
+        <NamedIndividual IRI="car"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is in"/>
+        <NamedIndividual IRI="way"/>
+        <NamedIndividual IRI="last book"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="world"/>
+        <NamedIndividual IRI="most dangerous weapons"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by lover"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by gay lover"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by gay lover armed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by gay lover armed with hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by gay lover armed with ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by lover armed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by lover armed with hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by lover armed with ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by scorned lover"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by scorned gay lover"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by scorned gay lover armed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by scorned gay lover armed with hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by scorned gay lover armed with ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by scorned lover armed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by scorned lover armed with hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would killed by scorned lover armed with ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by lover"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by gay lover"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by gay lover armed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by gay lover armed with hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by gay lover armed with ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by lover armed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by lover armed with hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by lover armed with ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by scorned lover"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by scorned gay lover"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by scorned gay lover armed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by scorned gay lover armed with hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by scorned gay lover armed with ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by scorned lover armed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by scorned lover armed with hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="would"/>
+        <NamedIndividual IRI="years"/>
+        <NamedIndividual IRI="would later killed by scorned lover armed with ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is"/>
+        <NamedIndividual IRI="Barack Obama"/>
+        <NamedIndividual IRI="President"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is"/>
+        <NamedIndividual IRI="Barack Obama"/>
+        <NamedIndividual IRI="44th President"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is"/>
+        <NamedIndividual IRI="Barack H. Obama"/>
+        <NamedIndividual IRI="President"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is"/>
+        <NamedIndividual IRI="Barack H. Obama"/>
+        <NamedIndividual IRI="44th President"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="starting"/>
+        <NamedIndividual IRI="Barry Obama"/>
+        <NamedIndividual IRI="trends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="starting"/>
+        <NamedIndividual IRI="Barry Obama"/>
+        <NamedIndividual IRI="few trends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="starting"/>
+        <NamedIndividual IRI="Barry Obama"/>
+        <NamedIndividual IRI="few pot-smoking trends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="starting"/>
+        <NamedIndividual IRI="Barry Obama"/>
+        <NamedIndividual IRI="pot-smoking trends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was"/>
+        <NamedIndividual IRI="Barry Obama"/>
+        <NamedIndividual IRI="known"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="of"/>
+        <NamedIndividual IRI="Bill Clinton"/>
+        <NamedIndividual IRI="claim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="Daredevil Poker jargon Dad"/>
+        <NamedIndividual IRI="Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is"/>
+        <NamedIndividual IRI="His story"/>
+        <NamedIndividual IRI="story"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is"/>
+        <NamedIndividual IRI="His story"/>
+        <NamedIndividual IRI="American story"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is"/>
+        <NamedIndividual IRI="His story"/>
+        <NamedIndividual IRI="American story values"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is"/>
+        <NamedIndividual IRI="His story"/>
+        <NamedIndividual IRI="American story values from heartland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is"/>
+        <NamedIndividual IRI="His story"/>
+        <NamedIndividual IRI="story values"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is"/>
+        <NamedIndividual IRI="His story"/>
+        <NamedIndividual IRI="story values from heartland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="variations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="local variations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="local variations of pakalolo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="other variations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="other local variations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="other local variations of pakalolo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="other variations of pakalolo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="variations of pakalolo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="were"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="available"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="were"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="readily available"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="readily available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="variations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="readily available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="local variations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="readily available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="local variations of pakalolo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="readily available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="other variations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="readily available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="other local variations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="readily available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="other local variations of pakalolo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="readily available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="other variations of pakalolo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="readily available"/>
+        <NamedIndividual IRI="Maui Wowie"/>
+        <NamedIndividual IRI="variations of pakalolo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="President Obama"/>
+        <NamedIndividual IRI="years of public service"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was"/>
+        <NamedIndividual IRI="President Obama"/>
+        <NamedIndividual IRI="born"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="working"/>
+        <NamedIndividual IRI="President Obama"/>
+        <NamedIndividual IRI="his way"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="was born With"/>
+        <NamedIndividual IRI="President Obama"/>
+        <NamedIndividual IRI="father"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="working through"/>
+        <NamedIndividual IRI="President Obama"/>
+        <NamedIndividual IRI="college"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="working with"/>
+        <NamedIndividual IRI="President Obama"/>
+        <NamedIndividual IRI="help"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="working with"/>
+        <NamedIndividual IRI="President Obama"/>
+        <NamedIndividual IRI="help of scholarships"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="are"/>
+        <NamedIndividual IRI="President Obama &apos;s years"/>
+        <NamedIndividual IRI="based"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="are based around"/>
+        <NamedIndividual IRI="President Obama &apos;s years"/>
+        <NamedIndividual IRI="his belief"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="are based around"/>
+        <NamedIndividual IRI="President Obama &apos;s years"/>
+        <NamedIndividual IRI="his belief in ability"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="are based around"/>
+        <NamedIndividual IRI="President Obama &apos;s years"/>
+        <NamedIndividual IRI="his unwavering belief"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="are based around"/>
+        <NamedIndividual IRI="President Obama &apos;s years"/>
+        <NamedIndividual IRI="his unwavering belief in ability"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="Season Rocko"/>
+        <NamedIndividual IRI="Modern Life Angel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is In"/>
+        <NamedIndividual IRI="decent students"/>
+        <NamedIndividual IRI="fact"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="armed with"/>
+        <NamedIndividual IRI="gay lover"/>
+        <NamedIndividual IRI="hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="armed with"/>
+        <NamedIndividual IRI="gay lover"/>
+        <NamedIndividual IRI="ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is in"/>
+        <NamedIndividual IRI="his unwavering belief"/>
+        <NamedIndividual IRI="ability unite around politics of purpose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is in"/>
+        <NamedIndividual IRI="middle-class upbringing"/>
+        <NamedIndividual IRI="strong family"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="has"/>
+        <NamedIndividual IRI="neil gaiman"/>
+        <NamedIndividual IRI="anansi boys"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="devastated by"/>
+        <NamedIndividual IRI="rebuild communities"/>
+        <NamedIndividual IRI="closure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="devastated by"/>
+        <NamedIndividual IRI="rebuild communities"/>
+        <NamedIndividual IRI="closure of local steel plants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="devastated by"/>
+        <NamedIndividual IRI="rebuild communities"/>
+        <NamedIndividual IRI="closure of steel plants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="armed with"/>
+        <NamedIndividual IRI="scorned lover"/>
+        <NamedIndividual IRI="hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="armed with"/>
+        <NamedIndividual IRI="scorned lover"/>
+        <NamedIndividual IRI="ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="armed with"/>
+        <NamedIndividual IRI="scorned gay lover"/>
+        <NamedIndividual IRI="hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="armed with"/>
+        <NamedIndividual IRI="scorned gay lover"/>
+        <NamedIndividual IRI="ball-peen hammer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="in"/>
+        <NamedIndividual IRI="white classmate"/>
+        <NamedIndividual IRI="sparkling new van"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="is with"/>
+        <NamedIndividual IRI="whole thing"/>
+        <NamedIndividual IRI="wording of prophecy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="from"/>
+        <NamedIndividual IRI="young Barry Obama"/>
+        <NamedIndividual IRI="high school buddies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="&apos;s buddies is"/>
+        <NamedIndividual IRI="young Barry Obama"/>
+        <NamedIndividual IRI="group"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was something of"/>
+        <NamedIndividual IRI="Hawaii"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mecca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was something of"/>
+        <NamedIndividual IRI="Hawaii"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">pot-smoking Mecca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was elected"/>
+        <NamedIndividual IRI="He"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">44th President of United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was elected"/>
+        <NamedIndividual IRI="He"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">President of United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was elected President on"/>
+        <NamedIndividual IRI="He"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">November 4 2008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="writes As"/>
+        <NamedIndividual IRI="Maraniss"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">member of Choom Gang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="on"/>
+        <NamedIndividual IRI="Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">pot-smoking days</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="writes like"/>
+        <NamedIndividual IRI="Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Dr. Seuss</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="writes like"/>
+        <NamedIndividual IRI="Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">almost Dr. Seuss</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="returned to"/>
+        <NamedIndividual IRI="he"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Chicago</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="teach law at"/>
+        <NamedIndividual IRI="he"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">University of Chicago</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="were with"/>
+        <NamedIndividual IRI="you"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Choom Gang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="is 44th President of"/>
+        <NamedIndividual IRI="Barack Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="is President of"/>
+        <NamedIndividual IRI="Barack Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="is 44th President of"/>
+        <NamedIndividual IRI="Barack H. Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="is President of"/>
+        <NamedIndividual IRI="Barack H. Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was"/>
+        <NamedIndividual IRI="One notable exception"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ray</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was"/>
+        <NamedIndividual IRI="President Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">With father born in Hawaii</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was"/>
+        <NamedIndividual IRI="President Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">With father born in Hawaii on August 4 1961</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was"/>
+        <NamedIndividual IRI="President Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">With father born on August 4 1961</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was"/>
+        <NamedIndividual IRI="President Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">With father from Kenya born in Hawaii</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was"/>
+        <NamedIndividual IRI="President Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">With father from Kenya born in Hawaii on August 4 1961</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was"/>
+        <NamedIndividual IRI="President Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">With father from Kenya born on August 4 1961</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was"/>
+        <NamedIndividual IRI="President Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">born in Hawaii on August 4 1961</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was born With"/>
+        <NamedIndividual IRI="President Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">father from Kenya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was born in"/>
+        <NamedIndividual IRI="President Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Hawaii</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was born on"/>
+        <NamedIndividual IRI="President Obama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">August 4 1961</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="is in"/>
+        <NamedIndividual IRI="Taliesin Catcher"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Rye Andy Kaufman Development hell Scouting Anubis 20th Century Fox Beavis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="was"/>
+        <NamedIndividual IRI="notable exception"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ray</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="be"/>
+        <Class IRI="himself"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="club"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Daredevil Poker jargon Dad"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Season Rocko"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="neil gaiman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="help"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="help"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="help"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is"/>
+        <Class IRI="His story"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is"/>
+        <Class IRI="His story"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="teach"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="wereclub"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="bring transparency toreached Aspassis inbringreached acrosshas"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="communities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="rebuild communities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="rebuild communities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="rebuild communities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="communities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="communities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is In"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is In"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is In"/>
+        <Class IRI="decent students"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="way"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="his unwavering belief"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="neville"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="lover"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="gay lover"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="gay lover"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="scorned lover"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="scorned lover"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="scorned gay lover"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="scorned gay lover"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed withhas"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed withhas"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed withhas"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inarmed withhas"/>
+        <Class IRI="group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="DURATION"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="lover"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="One notable exception"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="notable exception"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="is inis withhas"/>
+        <Class IRI="whole thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="passis in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="passis in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="passis inbringhas"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="passis inhas"/>
+        <Class IRI="world"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="reached Aspassis inbringhas"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="reached Aspassis inbringreached acrosshas"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="smoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="smoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked in"/>
+        <Class IRI="they"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked in"/>
+        <Class IRI="they"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked inwas"/>
+        <Class IRI="pot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked inwas"/>
+        <Class IRI="pot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked inwas"/>
+        <Class IRI="they"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked inwas"/>
+        <Class IRI="they"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked inwas"/>
+        <Class IRI="they"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked inwaswere chooming in"/>
+        <Class IRI="they"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked inwaswere chooming in"/>
+        <Class IRI="they"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked inwaswere chooming in"/>
+        <Class IRI="they"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sucked inwaswere chooming in"/>
+        <Class IRI="they"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="teach law atteach"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="teach law atteach"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="teach law atteach"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="teach law atremainteachreturned Uponreturned"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="teach law atremainteachreturned Uponreturned"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="teach law atremainteachreturned toreturned Uponreturned"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="teach law atteachreturned Upon"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="teach law atteachreturned Uponreturned"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="upbringing in"/>
+        <Class IRI="heartland"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="upbringing inis"/>
+        <Class IRI="heartland"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="upbringing inis in"/>
+        <Class IRI="middle-class upbringing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="upbringing inis inis"/>
+        <Class IRI="His story"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="upbringing inis inis"/>
+        <Class IRI="His story"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="upbringing inis inis"/>
+        <Class IRI="His story"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="upbringing inis inis"/>
+        <Class IRI="His story"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="upbringing inis inis"/>
+        <Class IRI="middle-class upbringing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was elected President on"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was electedareproud parentsare parents ofare proud parents ofwas elected President onparents"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was electedareproud parentsare parents ofare proud parents ofwas elected President onparents"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was electedareproud parentsare proud parents ofwas elected President onparents"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was electedproud parentsare proud parents ofwas elected President onparents"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was electedproud parentswas elected President on"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was electedproud parentswas elected President onparents"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was electedwas elected President on"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was electedwas elected President on"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was electedwas elected President on"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was opposite of"/>
+        <Class IRI="TA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was raised with"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was raised withwas"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="was raised withwas"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="waswas opposite of"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="waswas opposite of"/>
+        <Class IRI="TA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="were withwaswas opposite of"/>
+        <Class IRI="you"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="wereclubwere club of"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke here therewould smoke"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke herewould smoke anywherewould smoke therewould smoke here therewould smoke"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke herewould smoke therewould smoke here therewould smoke"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke therewould smoke here therewould smoke"/>
+        <Class IRI="He"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="white classmate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withsmoke in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withsmoke in"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="would smoke withwould smoke onsmoke in"/>
+        <Class IRI="he"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="be"/>
+        <Class IRI="good"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="club"/>
+        <Class IRI="his pot smoking buddies"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Army Vegeta Jill Thompson Necronomicon Cthulhu Aleister Crowley Azrael Norse mythology Doug William Saroyan Son Goku Bat Lash Satan Theory of conduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="Modern Life Angel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="has"/>
+        <Class IRI="anansi boys"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="help"/>
+        <Class IRI="communities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="help"/>
+        <Class IRI="communities devastated"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="help"/>
+        <Class IRI="rebuild communities devastated by closure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is"/>
+        <Class IRI="story"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is"/>
+        <Class IRI="American story"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="teach"/>
+        <Class IRI="law"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="wereclub"/>
+        <Class IRI="club"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="bring transparency toreached Aspassis inbringreached acrosshas"/>
+        <Class IRI="government"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="closure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="college"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="help"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="closure of local steel plants"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="closure of local steel plants"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="closure of steel plants"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="communities devastated by closure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="communities devastated by closure of local steel plants"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="communities devastated by closure of steel plants"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpdevastated by"/>
+        <Class IRI="help of scholarships"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="closure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="closure of steel plants"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="group of churches"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="his way"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="rebuild communities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="rebuild communities devastated"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="rebuild communities devastated by closure of local steel plants"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="helpworked withdevastated by"/>
+        <Class IRI="rebuild communities devastated by closure of steel plants"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is In"/>
+        <Class IRI="fact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is In"/>
+        <Class IRI="would killed by gay lover"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is In"/>
+        <Class IRI="would later killed by scorned gay lover"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="ability unite around politics of purpose"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="his unwavering belief in ability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is in"/>
+        <Class IRI="last book"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inhas"/>
+        <Class IRI="character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by lover"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by gay lover armed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by gay lover armed with hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by gay lover armed with ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by lover armed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by lover armed with ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by scorned lover"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by scorned gay lover armed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by scorned gay lover armed with hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by scorned gay lover armed with ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by scorned lover armed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would killed by scorned lover armed with hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by lover"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by gay lover"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by gay lover armed with hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by gay lover armed with ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by lover armed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by lover armed with hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by lover armed with ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by scorned lover"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by scorned gay lover armed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by scorned gay lover armed with hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by scorned gay lover armed with ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed with"/>
+        <Class IRI="would later killed by scorned lover armed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed withhas"/>
+        <Class IRI="pot dealer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed withhas"/>
+        <Class IRI="would killed by scorned gay lover"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed withhas"/>
+        <Class IRI="would later killed by scorned lover armed with hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inarmed withhas"/>
+        <Class IRI="would later killed by scorned lover armed with ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="would killed by lover armed with hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="would killed by scorned lover armed with ball-peen hammer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is Inwasarmed withhas"/>
+        <Class IRI="would later killed by gay lover armed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="is inis withhas"/>
+        <Class IRI="wording of prophecy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="passis in"/>
+        <Class IRI="groundbreaking lobbying reform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="passis in"/>
+        <Class IRI="lobbying reform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="passis inbringhas"/>
+        <Class IRI="transparency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="passis inhas"/>
+        <Class IRI="most dangerous weapons"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="reached Aspassis inbringhas"/>
+        <Class IRI="United States Senator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="reached Aspassis inbringreached acrosshas"/>
+        <Class IRI="aisle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="smoke in"/>
+        <Class IRI="classmate &apos;s sparkling new van"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="smoke in"/>
+        <Class IRI="white classmate &apos;s van"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked in"/>
+        <Class IRI="last bit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked in"/>
+        <Class IRI="last bit from ceiling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked inwas"/>
+        <Class IRI="bit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked inwas"/>
+        <Class IRI="gone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked inwas"/>
+        <Class IRI="bit from ceiling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked inwas"/>
+        <Class IRI="last bit of smoke"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked inwas"/>
+        <Class IRI="when gone"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked inwaswere chooming in"/>
+        <Class IRI="car"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked inwaswere chooming in"/>
+        <Class IRI="bit of smoke"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked inwaswere chooming in"/>
+        <Class IRI="bit of smoke from ceiling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sucked inwaswere chooming in"/>
+        <Class IRI="last bit of smoke from ceiling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="teach law atteach"/>
+        <Class IRI="ORGANIZATION"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="teach law atteach"/>
+        <Class IRI="University"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="teach law atteach"/>
+        <Class IRI="constitutional law"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="teach law atremainteachreturned Uponreturned"/>
+        <Class IRI="active"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="teach law atremainteachreturned Uponreturned"/>
+        <Class IRI="active in his community"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="teach law atremainteachreturned toreturned Uponreturned"/>
+        <Class IRI="LOCATION"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="teach law atteachreturned Upon"/>
+        <Class IRI="graduation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="teach law atteachreturned Uponreturned"/>
+        <Class IRI="help"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="upbringing in"/>
+        <Class IRI="strong family"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="upbringing inis"/>
+        <Class IRI="strong family"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="upbringing inis in"/>
+        <Class IRI="strong family"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="upbringing inis inis"/>
+        <Class IRI="American story values"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="upbringing inis inis"/>
+        <Class IRI="American story values from heartland"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="upbringing inis inis"/>
+        <Class IRI="story values"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="upbringing inis inis"/>
+        <Class IRI="story values from heartland"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="upbringing inis inis"/>
+        <Class IRI="strong family"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was elected President on"/>
+        <Class IRI="DATE"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was electedareproud parentsare parents ofare proud parents ofwas elected President onparents"/>
+        <Class IRI="proud parents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was electedareproud parentsare parents ofare proud parents ofwas elected President onparents"/>
+        <Class IRI="two daughters"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was electedareproud parentsare proud parents ofwas elected President onparents"/>
+        <Class IRI="parents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was electedproud parentsare proud parents ofwas elected President onparents"/>
+        <Class IRI="two daughters"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was electedproud parentswas elected President on"/>
+        <Class IRI="his wife"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was electedproud parentswas elected President onparents"/>
+        <Class IRI="his wife"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was electedwas elected President on"/>
+        <Class IRI="LOCATION"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was electedwas elected President on"/>
+        <Class IRI="President"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was electedwas elected President on"/>
+        <Class IRI="44th President"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was opposite of"/>
+        <Class IRI="Bill Clinton &apos;s claim"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was raised with"/>
+        <Class IRI="help"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was raised withwas"/>
+        <Class IRI="army"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="was raised withwas"/>
+        <Class IRI="raised"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="waswas opposite of"/>
+        <Class IRI="claim"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="waswas opposite of"/>
+        <Class IRI="opposite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="were withwaswas opposite of"/>
+        <Class IRI="PERSON"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="wereclubwere club of"/>
+        <Class IRI="disaffection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke"/>
+        <Class IRI="it"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke here therewould smoke"/>
+        <Class IRI="it"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke herewould smoke anywherewould smoke therewould smoke here therewould smoke"/>
+        <Class IRI="it"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke herewould smoke therewould smoke here therewould smoke"/>
+        <Class IRI="it"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke therewould smoke here therewould smoke"/>
+        <Class IRI="it"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="couple"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="classmate &apos;s van"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="classmate &apos;s new van"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="classmate &apos;s sparkling van"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="couple of Hawaiian kids"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="dorm room"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="dorm room of brother"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="sparkling new van"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="white classmate &apos;s new van"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="white classmate &apos;s sparkling van"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withinwould smoke onsmoke in"/>
+        <Class IRI="white classmate &apos;s sparkling new van"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withsmoke in"/>
+        <Class IRI="couple of kids"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withsmoke in"/>
+        <Class IRI="high school kid"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withsmoke in"/>
+        <Class IRI="school kid"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="would smoke withwould smoke onsmoke in"/>
+        <Class IRI="beach"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="relatedTo"/>
+        <Class IRI="DATE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="relatedTo"/>
+        <Class IRI="DURATION"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="relatedTo"/>
+        <Class IRI="LOCATION"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="relatedTo"/>
+        <Class IRI="PERSON"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="relatedTo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0.2017-03-29T23:31:42Z) https://github.com/owlcs/owlapi/ -->
+
+

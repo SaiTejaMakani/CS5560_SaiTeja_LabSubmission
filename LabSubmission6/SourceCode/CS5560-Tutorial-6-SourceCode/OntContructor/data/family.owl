@@ -136,7 +136,7 @@
         <Class IRI="Gender"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasParent"/>
+        <ObjectProperty IRI="has Parent"/>
         <Class IRI="Person"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
